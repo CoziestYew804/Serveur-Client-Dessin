@@ -1,0 +1,7 @@
+<map id="src/Shape/ComposedShape.hpp" name="src/Shape/ComposedShape.hpp">
+<area shape="rect" id="node2" href="$_shape_8hpp.html" title="Shape.hpp" alt="" coords="165,80,249,107"/>
+<area shape="rect" id="node3" href="$_color_8hpp.html" title="../Utils/Color.hpp" alt="" coords="231,155,353,181"/>
+<area shape="rect" id="node6" href="$_vector2_d_8hpp.html" title="../Geometry/Vector2D.hpp" alt="" coords="33,155,207,181"/>
+<area shape="rect" id="node8" href="$_radian_angle_8hpp.html" title="RadianAngle.hpp" alt="" coords="86,229,207,256"/>
+<area shape="rect" id="node10" href="$_geometry_exception_8hpp.html" title="GeometryException.hpp" alt="" coords="109,304,272,331"/>
+</map>

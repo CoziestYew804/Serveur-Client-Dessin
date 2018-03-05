@@ -1,0 +1,76 @@
+\hypertarget{class_polygon_creator}{}\section{Polygon\+Creator Class Reference}
+\label{class_polygon_creator}\index{Polygon\+Creator@{Polygon\+Creator}}
+
+
+{\ttfamily \#include $<$Polygon\+Creator.\+hpp$>$}
+
+
+
+Inheritance diagram for Polygon\+Creator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{class_polygon_creator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Polygon\+Creator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{class_polygon_creator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_polygon_creator_ab0d3a2c045b483938bda8cffc6173e42}{Polygon\+Creator} (\hyperlink{class_shape_creator_link}{Shape\+Creator\+Link} $\ast$next)
+\item 
+virtual \hyperlink{class_shape}{Shape} $\ast$ \hyperlink{class_polygon_creator_ad7a34580d4291a50fe189c912c7b32a0}{create\+Shape\+Spe} (const string \&shape\+String) const
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class \hyperlink{class_polygon_creator}{Polygon\+Creator} Link of the C\+OR for build \hyperlink{class_polygon}{Polygon} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_polygon_creator_ab0d3a2c045b483938bda8cffc6173e42}{}\label{class_polygon_creator_ab0d3a2c045b483938bda8cffc6173e42} 
+\index{Polygon\+Creator@{Polygon\+Creator}!Polygon\+Creator@{Polygon\+Creator}}
+\index{Polygon\+Creator@{Polygon\+Creator}!Polygon\+Creator@{Polygon\+Creator}}
+\subsubsection{\texorpdfstring{Polygon\+Creator()}{PolygonCreator()}}
+{\footnotesize\ttfamily Polygon\+Creator\+::\+Polygon\+Creator (\begin{DoxyParamCaption}\item[{\hyperlink{class_shape_creator_link}{Shape\+Creator\+Link} $\ast$}]{next }\end{DoxyParamCaption})}
+
+Constructor of \hyperlink{class_polygon_creator}{Polygon\+Creator} 
+\begin{DoxyParams}{Parameters}
+{\em next} & The next \hyperlink{class_shape_creator_link}{Shape\+Creator\+Link} if this one fails \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_polygon_creator_ad7a34580d4291a50fe189c912c7b32a0}{}\label{class_polygon_creator_ad7a34580d4291a50fe189c912c7b32a0} 
+\index{Polygon\+Creator@{Polygon\+Creator}!create\+Shape\+Spe@{create\+Shape\+Spe}}
+\index{create\+Shape\+Spe@{create\+Shape\+Spe}!Polygon\+Creator@{Polygon\+Creator}}
+\subsubsection{\texorpdfstring{create\+Shape\+Spe()}{createShapeSpe()}}
+{\footnotesize\ttfamily \hyperlink{class_shape}{Shape} $\ast$ Polygon\+Creator\+::create\+Shape\+Spe (\begin{DoxyParamCaption}\item[{const string \&}]{shape\+String }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Try to create a \hyperlink{class_polygon}{Polygon} with the string 
+\begin{DoxyParams}{Parameters}
+{\em shape\+String} & the string with informations of the shape \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Shape$\ast$ wich were created 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_shape_creator_link_a036ecc845946d23b36335e9077308bcf}{Shape\+Creator\+Link}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Loader/\hyperlink{_polygon_creator_8hpp}{Polygon\+Creator.\+hpp}\item 
+src/\+Loader/\hyperlink{_polygon_creator_8cpp}{Polygon\+Creator.\+cpp}\end{DoxyCompactItemize}

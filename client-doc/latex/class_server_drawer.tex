@@ -1,0 +1,143 @@
+\hypertarget{class_server_drawer}{}\section{Server\+Drawer Class Reference}
+\label{class_server_drawer}\index{Server\+Drawer@{Server\+Drawer}}
+
+
+{\ttfamily \#include $<$Server\+Drawer.\+hpp$>$}
+
+
+
+Inheritance diagram for Server\+Drawer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{class_server_drawer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Server\+Drawer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{class_server_drawer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_server_drawer_a533e227591169905b2b4eba7c6c3d3bc}{Server\+Drawer} ()
+\item 
+virtual \hyperlink{class_server_drawer_a40a7d8a070305d246bb12b23af81e72b}{$\sim$\+Server\+Drawer} ()
+\item 
+void \hyperlink{class_server_drawer_a70bd94ed93c913b53d689fb8fc5dddc9}{draw} (const \hyperlink{class_circle}{Circle} $\ast$circle)
+\item 
+void \hyperlink{class_server_drawer_a2bec9e70a1111d59b6c2d7de0908d780}{draw} (const \hyperlink{class_segment}{Segment} $\ast$segment)
+\item 
+void \hyperlink{class_server_drawer_aad913eff7f5c248003ef70ec8c09d2b2}{draw} (const \hyperlink{class_triangle}{Triangle} $\ast$triangle)
+\item 
+void \hyperlink{class_server_drawer_acd973f89e7618d67fcd8db364df0b6bf}{draw} (const \hyperlink{class_polygon}{Polygon} $\ast$polygon)
+\item 
+virtual void \hyperlink{class_server_drawer_a071fa49ab9edc71554b32aaaf7422b7f}{draw} (const \hyperlink{class_shape}{Shape} $\ast$shape)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is the drawer that implement a way to draw shapes using a drawing server. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_server_drawer_a533e227591169905b2b4eba7c6c3d3bc}{}\label{class_server_drawer_a533e227591169905b2b4eba7c6c3d3bc} 
+\index{Server\+Drawer@{Server\+Drawer}!Server\+Drawer@{Server\+Drawer}}
+\index{Server\+Drawer@{Server\+Drawer}!Server\+Drawer@{Server\+Drawer}}
+\subsubsection{\texorpdfstring{Server\+Drawer()}{ServerDrawer()}}
+{\footnotesize\ttfamily Server\+Drawer\+::\+Server\+Drawer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hypertarget{class_server_drawer_a40a7d8a070305d246bb12b23af81e72b}{}\label{class_server_drawer_a40a7d8a070305d246bb12b23af81e72b} 
+\index{Server\+Drawer@{Server\+Drawer}!````~Server\+Drawer@{$\sim$\+Server\+Drawer}}
+\index{````~Server\+Drawer@{$\sim$\+Server\+Drawer}!Server\+Drawer@{Server\+Drawer}}
+\subsubsection{\texorpdfstring{$\sim$\+Server\+Drawer()}{~ServerDrawer()}}
+{\footnotesize\ttfamily Server\+Drawer\+::$\sim$\+Server\+Drawer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_server_drawer_a70bd94ed93c913b53d689fb8fc5dddc9}{}\label{class_server_drawer_a70bd94ed93c913b53d689fb8fc5dddc9} 
+\index{Server\+Drawer@{Server\+Drawer}!draw@{draw}}
+\index{draw@{draw}!Server\+Drawer@{Server\+Drawer}}
+\subsubsection{\texorpdfstring{draw()}{draw()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily void Server\+Drawer\+::draw (\begin{DoxyParamCaption}\item[{const \hyperlink{class_circle}{Circle} $\ast$}]{circle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Draws the \hyperlink{class_circle}{Circle}. 
+\begin{DoxyParams}{Parameters}
+{\em circle} & The \hyperlink{class_circle}{Circle} to draw. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_drawing_visitor_a287f6d770c755c1c3bc144fb08b65030}{Drawing\+Visitor}.
+
+\hypertarget{class_server_drawer_a2bec9e70a1111d59b6c2d7de0908d780}{}\label{class_server_drawer_a2bec9e70a1111d59b6c2d7de0908d780} 
+\index{Server\+Drawer@{Server\+Drawer}!draw@{draw}}
+\index{draw@{draw}!Server\+Drawer@{Server\+Drawer}}
+\subsubsection{\texorpdfstring{draw()}{draw()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily void Server\+Drawer\+::draw (\begin{DoxyParamCaption}\item[{const \hyperlink{class_segment}{Segment} $\ast$}]{segment }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Draws the \hyperlink{class_segment}{Segment}. 
+\begin{DoxyParams}{Parameters}
+{\em segment} & The \hyperlink{class_segment}{Segment} to draw. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_drawing_visitor_a8a95018de31a7e3d7a067c347478ffde}{Drawing\+Visitor}.
+
+\hypertarget{class_server_drawer_aad913eff7f5c248003ef70ec8c09d2b2}{}\label{class_server_drawer_aad913eff7f5c248003ef70ec8c09d2b2} 
+\index{Server\+Drawer@{Server\+Drawer}!draw@{draw}}
+\index{draw@{draw}!Server\+Drawer@{Server\+Drawer}}
+\subsubsection{\texorpdfstring{draw()}{draw()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily void Server\+Drawer\+::draw (\begin{DoxyParamCaption}\item[{const \hyperlink{class_triangle}{Triangle} $\ast$}]{triangle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Draws the \hyperlink{class_triangle}{Triangle}. 
+\begin{DoxyParams}{Parameters}
+{\em triangle} & The \hyperlink{class_triangle}{Triangle} to draw. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_drawing_visitor_a178aa7e1bb9cfbd538d7de0dbfa2d4b1}{Drawing\+Visitor}.
+
+\hypertarget{class_server_drawer_acd973f89e7618d67fcd8db364df0b6bf}{}\label{class_server_drawer_acd973f89e7618d67fcd8db364df0b6bf} 
+\index{Server\+Drawer@{Server\+Drawer}!draw@{draw}}
+\index{draw@{draw}!Server\+Drawer@{Server\+Drawer}}
+\subsubsection{\texorpdfstring{draw()}{draw()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily void Server\+Drawer\+::draw (\begin{DoxyParamCaption}\item[{const \hyperlink{class_polygon}{Polygon} $\ast$}]{polygon }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Draws the \hyperlink{class_polygon}{Polygon}. 
+\begin{DoxyParams}{Parameters}
+{\em polygon} & The \hyperlink{class_polygon}{Polygon} to draw. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_drawing_visitor_a771a2110a3afe4e87688bddd65657a46}{Drawing\+Visitor}.
+
+\hypertarget{class_server_drawer_a071fa49ab9edc71554b32aaaf7422b7f}{}\label{class_server_drawer_a071fa49ab9edc71554b32aaaf7422b7f} 
+\index{Server\+Drawer@{Server\+Drawer}!draw@{draw}}
+\index{draw@{draw}!Server\+Drawer@{Server\+Drawer}}
+\subsubsection{\texorpdfstring{draw()}{draw()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily void Server\+Drawer\+::draw (\begin{DoxyParamCaption}\item[{const \hyperlink{class_shape}{Shape} $\ast$}]{shape }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Draws the \hyperlink{class_shape}{Shape}. 
+\begin{DoxyParams}{Parameters}
+{\em polygon} & The \hyperlink{class_shape}{Shape} to draw. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_drawing_visitor_ad3d9e3028449f65ea2c405c74c4a55b4}{Drawing\+Visitor}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Visitor/\hyperlink{_server_drawer_8hpp}{Server\+Drawer.\+hpp}\item 
+src/\+Visitor/\hyperlink{_server_drawer_8cpp}{Server\+Drawer.\+cpp}\end{DoxyCompactItemize}

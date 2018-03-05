@@ -1,0 +1,87 @@
+\hypertarget{class_socket}{}\section{Socket Class Reference}
+\label{class_socket}\index{Socket@{Socket}}
+
+
+{\ttfamily \#include $<$Socket.\+hpp$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static const \hyperlink{class_socket}{Socket} $\ast$ \hyperlink{class_socket_ad5d9fff005dee4de1de73ee22c42fad4}{get\+Instance} ()
+\item 
+static void \hyperlink{class_socket_a2571482be5b97e7b2beac7abf543a025}{create\+Connexion} ()
+\item 
+static void \hyperlink{class_socket_a23669198a36df9525a6248d7650661e4}{send\+Request} (const string \&request)
+\item 
+static string \hyperlink{class_socket_ae41cf538ddff9d547b1a6c43529e6d26}{receive\+Data} ()
+\item 
+static void \hyperlink{class_socket_aacc2ad59fc693055e3c0adcdbb4da209}{close\+Socket} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The singleton that will encapsulate the socket to communicate with the drawing server. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_socket_aacc2ad59fc693055e3c0adcdbb4da209}{}\label{class_socket_aacc2ad59fc693055e3c0adcdbb4da209} 
+\index{Socket@{Socket}!close\+Socket@{close\+Socket}}
+\index{close\+Socket@{close\+Socket}!Socket@{Socket}}
+\subsubsection{\texorpdfstring{close\+Socket()}{closeSocket()}}
+{\footnotesize\ttfamily void Socket\+::close\+Socket (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Closes the socket 
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{class_network_exception}{Network\+Exception}} & When close function fails \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_socket_a2571482be5b97e7b2beac7abf543a025}{}\label{class_socket_a2571482be5b97e7b2beac7abf543a025} 
+\index{Socket@{Socket}!create\+Connexion@{create\+Connexion}}
+\index{create\+Connexion@{create\+Connexion}!Socket@{Socket}}
+\subsubsection{\texorpdfstring{create\+Connexion()}{createConnexion()}}
+{\footnotesize\ttfamily void Socket\+::create\+Connexion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates the connexion to the server. 
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{class_network_exception}{Network\+Exception}} & When the socket can\textquotesingle{}t be created or when server connexion can\textquotesingle{}t be open \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_socket_ad5d9fff005dee4de1de73ee22c42fad4}{}\label{class_socket_ad5d9fff005dee4de1de73ee22c42fad4} 
+\index{Socket@{Socket}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!Socket@{Socket}}
+\subsubsection{\texorpdfstring{get\+Instance()}{getInstance()}}
+{\footnotesize\ttfamily const \hyperlink{class_socket}{Socket} $\ast$ Socket\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates the \hyperlink{class_socket}{Socket} if it hasn\textquotesingle{}t been created yet, otherwise returns a pointer to the instance of the \hyperlink{class_socket}{Socket}. \begin{DoxyReturn}{Returns}
+Socket$\ast$ A pointer to the instance of the \hyperlink{class_socket}{Socket}. 
+\end{DoxyReturn}
+\hypertarget{class_socket_ae41cf538ddff9d547b1a6c43529e6d26}{}\label{class_socket_ae41cf538ddff9d547b1a6c43529e6d26} 
+\index{Socket@{Socket}!receive\+Data@{receive\+Data}}
+\index{receive\+Data@{receive\+Data}!Socket@{Socket}}
+\subsubsection{\texorpdfstring{receive\+Data()}{receiveData()}}
+{\footnotesize\ttfamily string Socket\+::receive\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Receives a message from the server and returns it. 
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{class_network_exception}{Network\+Exception}} & When message from server cannot be load \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+string The message received from the server. 
+\end{DoxyReturn}
+\hypertarget{class_socket_a23669198a36df9525a6248d7650661e4}{}\label{class_socket_a23669198a36df9525a6248d7650661e4} 
+\index{Socket@{Socket}!send\+Request@{send\+Request}}
+\index{send\+Request@{send\+Request}!Socket@{Socket}}
+\subsubsection{\texorpdfstring{send\+Request()}{sendRequest()}}
+{\footnotesize\ttfamily void Socket\+::send\+Request (\begin{DoxyParamCaption}\item[{const string \&}]{request }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Sends the request to the server. 
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{class_network_exception}{Network\+Exception}} & when message cannot be send \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Network/\hyperlink{_socket_8hpp}{Socket.\+hpp}\item 
+src/\+Network/\hyperlink{_socket_8cpp}{Socket.\+cpp}\end{DoxyCompactItemize}

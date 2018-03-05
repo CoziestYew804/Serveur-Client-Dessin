@@ -1,0 +1,48 @@
+\hypertarget{test-shape_8cpp}{}\section{src/\+Tests/test-\/shape.cpp File Reference}
+\label{test-shape_8cpp}\index{src/\+Tests/test-\/shape.\+cpp@{src/\+Tests/test-\/shape.\+cpp}}
+{\ttfamily \#include \char`\"{}../\+Shape/\+Circle.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+Shape/\+Polygon.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+Shape/\+Triangle.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+Shape/\+Segment.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+Shape/\+Composed\+Shape.\+hpp\char`\"{}}\newline
+Include dependency graph for test-\/shape.cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{test-shape_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{test-shape_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{test-shape_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{}\label{test-shape_8cpp_a0ddf1224851353fc92bfbff6f499fa97} 
+\index{test-\/shape.\+cpp@{test-\/shape.\+cpp}!main@{main}}
+\index{main@{main}!test-\/shape.\+cpp@{test-\/shape.\+cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Vector2D center1 = Vector2D(10, 10);
+Vector2D center2 = Vector2D(1, 1);
+Vector2D center3 = Vector2D(5, 5);
+Vector2D center4 = Vector2D(30, 30);
+
+cout << "===== Circle =====" << endl << endl;
+
+Circle C1 = Circle(center1, 20);
+cout << "C1(Vector2D(10, 10), 20) => " << C1 << endl;
+C1.setColor(white);
+cout << "C1.setColor(white) => " << C1 << endl;
+
+Circle C2 = Circle(center2, 30, red);
+cout << "C1(Vector2D(1, 1), 30, red) => " << C2 << endl;
+\end{DoxyVerb}
+
+
+\hyperlink{class_circle}{Circle} C2 = \hyperlink{class_circle}{Circle(center1, 30, red)}; \hyperlink{class_circle}{Circle} C1 = \hyperlink{class_circle}{Circle(center1, 20)}; \hyperlink{class_circle}{Circle} C2 = \hyperlink{class_circle}{Circle(center1, 30, red)};
+
+cout $<$$<$ (int)color1.\+get\+Red() $<$$<$ endl; cout $<$$<$ (int)color1.\+get\+Green() $<$$<$ endl; cout $<$$<$ color1 $<$$<$ endl; cout $<$$<$ color2 $<$$<$ endl; cout $<$$<$ C1 $<$$<$ endl; cout $<$$<$ C2 $<$$<$ endl;

@@ -1,0 +1,10 @@
+<map id="src/Shape/Segment.hpp" name="src/Shape/Segment.hpp">
+<area shape="rect" id="node3" href="$_shape_8hpp.html" title="Shape.hpp" alt="" coords="185,80,269,107"/>
+<area shape="rect" id="node11" href="$_drawing_visitor_8hpp.html" title="../Visitor/DrawingVisitor.hpp" alt="" coords="453,229,639,256"/>
+<area shape="rect" id="node12" href="$_save_text_visitor_8hpp.html" title="../Visitor/SaveTextVisitor.hpp" alt="" coords="504,80,697,107"/>
+<area shape="rect" id="node4" href="$_color_8hpp.html" title="../Utils/Color.hpp" alt="" coords="5,155,127,181"/>
+<area shape="rect" id="node6" href="$_vector2_d_8hpp.html" title="../Geometry/Vector2D.hpp" alt="" coords="203,155,377,181"/>
+<area shape="rect" id="node8" href="$_radian_angle_8hpp.html" title="RadianAngle.hpp" alt="" coords="253,229,375,256"/>
+<area shape="rect" id="node10" href="$_geometry_exception_8hpp.html" title="GeometryException.hpp" alt="" coords="233,304,395,331"/>
+<area shape="rect" id="node13" href="$_save_visitor_8hpp.html" title="SaveVisitor.hpp" alt="" coords="563,155,678,181"/>
+</map>

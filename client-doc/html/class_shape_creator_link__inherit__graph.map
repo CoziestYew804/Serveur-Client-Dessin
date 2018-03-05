@@ -1,0 +1,8 @@
+<map id="ShapeCreatorLink" name="ShapeCreatorLink">
+<area shape="rect" id="node3" href="$class_circle_creator.html" title="CircleCreator" alt="" coords="5,155,104,181"/>
+<area shape="rect" id="node4" href="$class_composed_shape_creator.html" title="ComposedShapeCreator" alt="" coords="128,155,293,181"/>
+<area shape="rect" id="node5" href="$class_polygon_creator.html" title="PolygonCreator" alt="" coords="317,155,429,181"/>
+<area shape="rect" id="node6" href="$class_segment_creator.html" title="SegmentCreator" alt="" coords="453,155,571,181"/>
+<area shape="rect" id="node7" href="$class_triangle_creator.html" title="TriangleCreator" alt="" coords="595,155,706,181"/>
+<area shape="rect" id="node2" href="$class_shape_creator.html" title="ShapeCreator" alt="" coords="322,5,425,32"/>
+</map>

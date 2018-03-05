@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="drawing-server:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/drawing_server_jar</output-path>
+    <root id="archive" name="drawing-server.jar">
+      <element id="module-output" name="drawing-server" />
+    </root>
+  </artifact>
+</component>

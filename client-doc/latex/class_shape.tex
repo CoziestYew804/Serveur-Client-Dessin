@@ -1,0 +1,221 @@
+\hypertarget{class_shape}{}\section{Shape Class Reference}
+\label{class_shape}\index{Shape@{Shape}}
+
+
+{\ttfamily \#include $<$Shape.\+hpp$>$}
+
+
+
+Inheritance diagram for Shape\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shape__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Shape\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=132pt]{class_shape__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_shape_a6a2e4f913c228a1a167062035ba7e898}{Shape} (const \hyperlink{class_color}{Color} \&color=\hyperlink{class_color_a94697e8c9eb81124c5a7c1439e1e7348}{Color\+::get\+Color}(\char`\"{}black\char`\"{}))
+\item 
+virtual void \hyperlink{class_shape_ae67fc6d39dd33759b65ff6112b21eab7}{draw} (\hyperlink{class_drawing_visitor}{Drawing\+Visitor} $\ast$visitor) const =0
+\item 
+virtual \hyperlink{class_shape_a0d74dcb2db0791b88b92f439bf4a6972}{operator string} () const =0
+\item 
+virtual void \hyperlink{class_shape_ae1477829e1b06aad805b8b76312f87bc}{save} (const \hyperlink{class_save_visitor}{Save\+Visitor} $\ast$save\+Visitor, const string \&filename) const =0
+\item 
+virtual \hyperlink{class_shape}{Shape} $\ast$ \hyperlink{class_shape_ad3daca0d9bedf9aa15b92afab63c1de8}{translation} (const \hyperlink{class_vector2_d}{Vector2D} \&translation\+Vector) const =0
+\item 
+virtual \hyperlink{class_shape}{Shape} $\ast$ \hyperlink{class_shape_a91f18af3004ba210db5c91084c50beb9}{homothety} (const \hyperlink{class_vector2_d}{Vector2D} \&invariant\+Point, const double \&homothety\+Ratio) const =0
+\item 
+virtual \hyperlink{class_shape}{Shape} $\ast$ \hyperlink{class_shape_abfc7a673b8a6d9a4d646dc15c771aa0d}{rotation} (const \hyperlink{class_vector2_d}{Vector2D} \&rotation\+Center, const \hyperlink{class_radian_angle}{Radian\+Angle} \&rotation\+Angle) const =0
+\item 
+virtual double \hyperlink{class_shape_ad9454ee04617290547e7529180b1beae}{get\+Area} () const =0
+\item 
+virtual void \hyperlink{class_shape_a9f3d9c69476b41a375161b27949f765c}{set\+Color} (const \hyperlink{class_color}{Color} \&color)
+\item 
+virtual \hyperlink{class_color}{Color} \hyperlink{class_shape_a6ab685fc0e6aeec5d2e9743f5ecd66a4}{get\+Color} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_color}{Color} \hyperlink{class_shape_a5b499b01e45f0dbd8bbc64172f169213}{\+\_\+color}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \hyperlink{class_shape_ada7f3e97b3113c4725bf7ec7293b5a36}{operator$<$$<$} (ostream \&os, const \hyperlink{class_shape}{Shape} \&shape)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is the base class for every \hyperlink{class_shape}{Shape}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_shape_a6a2e4f913c228a1a167062035ba7e898}{}\label{class_shape_a6a2e4f913c228a1a167062035ba7e898} 
+\index{Shape@{Shape}!Shape@{Shape}}
+\index{Shape@{Shape}!Shape@{Shape}}
+\subsubsection{\texorpdfstring{Shape()}{Shape()}}
+{\footnotesize\ttfamily Shape\+::\+Shape (\begin{DoxyParamCaption}\item[{const \hyperlink{class_color}{Color} \&}]{color = {\ttfamily \hyperlink{class_color_a94697e8c9eb81124c5a7c1439e1e7348}{Color\+::get\+Color}(\char`\"{}black\char`\"{})} }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_shape_ae67fc6d39dd33759b65ff6112b21eab7}{}\label{class_shape_ae67fc6d39dd33759b65ff6112b21eab7} 
+\index{Shape@{Shape}!draw@{draw}}
+\index{draw@{draw}!Shape@{Shape}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual void Shape\+::draw (\begin{DoxyParamCaption}\item[{\hyperlink{class_drawing_visitor}{Drawing\+Visitor} $\ast$}]{visitor }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Draws the \hyperlink{class_shape}{Shape} using a \hyperlink{class_drawing_visitor}{Drawing\+Visitor}. 
+\begin{DoxyParams}{Parameters}
+{\em visitor} & The \hyperlink{class_drawing_visitor}{Drawing\+Visitor} to use to draw the shape. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_segment_ad7b3641fc3670b1fba9cd97c2c40e3ba}{Segment}, \hyperlink{class_polygon_a245c526a6a65ea99f5549fe5243006d0}{Polygon}, \hyperlink{class_triangle_a1fa834143ed718605959a227eba573b3}{Triangle}, \hyperlink{class_circle_a4c2dc8107eab8b562328743cafdddd79}{Circle}, and \hyperlink{class_composed_shape_a30f69734aa983bca56574ff4e5fd1723}{Composed\+Shape}.
+
+\hypertarget{class_shape_ad9454ee04617290547e7529180b1beae}{}\label{class_shape_ad9454ee04617290547e7529180b1beae} 
+\index{Shape@{Shape}!get\+Area@{get\+Area}}
+\index{get\+Area@{get\+Area}!Shape@{Shape}}
+\subsubsection{\texorpdfstring{get\+Area()}{getArea()}}
+{\footnotesize\ttfamily virtual double Shape\+::get\+Area (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the area of the \hyperlink{class_shape}{Shape}. \begin{DoxyReturn}{Returns}
+The area of the \hyperlink{class_shape}{Shape}. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_segment_af019f332cb32a21a1f9b7ae5acd7b4e7}{Segment}, \hyperlink{class_polygon_ae1ae9dd5e5613f119af3e31488427b01}{Polygon}, \hyperlink{class_triangle_a5f7fa9fd678345063e50e3458d943a9b}{Triangle}, \hyperlink{class_circle_a7bfb5ab5c8d4f11890407a2483ad61ee}{Circle}, and \hyperlink{class_composed_shape_a89b3457e1699afeb86805afad627d2c7}{Composed\+Shape}.
+
+\hypertarget{class_shape_a6ab685fc0e6aeec5d2e9743f5ecd66a4}{}\label{class_shape_a6ab685fc0e6aeec5d2e9743f5ecd66a4} 
+\index{Shape@{Shape}!get\+Color@{get\+Color}}
+\index{get\+Color@{get\+Color}!Shape@{Shape}}
+\subsubsection{\texorpdfstring{get\+Color()}{getColor()}}
+{\footnotesize\ttfamily \hyperlink{class_color}{Color} Shape\+::get\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Gets the color of the \hyperlink{class_shape}{Shape} \begin{DoxyReturn}{Returns}
+The color of the \hyperlink{class_shape}{Shape}. 
+\end{DoxyReturn}
+\hypertarget{class_shape_a91f18af3004ba210db5c91084c50beb9}{}\label{class_shape_a91f18af3004ba210db5c91084c50beb9} 
+\index{Shape@{Shape}!homothety@{homothety}}
+\index{homothety@{homothety}!Shape@{Shape}}
+\subsubsection{\texorpdfstring{homothety()}{homothety()}}
+{\footnotesize\ttfamily virtual \hyperlink{class_shape}{Shape}$\ast$ Shape\+::homothety (\begin{DoxyParamCaption}\item[{const \hyperlink{class_vector2_d}{Vector2D} \&}]{invariant\+Point,  }\item[{const double \&}]{homothety\+Ratio }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Apply an homothety on the shape. 
+\begin{DoxyParams}{Parameters}
+{\em invariant\+Point} & The center of the homothety. \\
+\hline
+{\em homothety\+Ratio} & The ratio of the homothety. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_segment_a5fe8d9711a0d3405a8c4cf3270069ee3}{Segment}, \hyperlink{class_polygon_a2b77c7ecbe9ca68664d7f7020181b791}{Polygon}, \hyperlink{class_triangle_a45a3a9f74118c99b95c6d8e993773a71}{Triangle}, \hyperlink{class_circle_a031f188681977c2cf6ba2e80e30fb5ce}{Circle}, and \hyperlink{class_composed_shape_acff645310f05924aaf66b0de71b2307a}{Composed\+Shape}.
+
+\hypertarget{class_shape_a0d74dcb2db0791b88b92f439bf4a6972}{}\label{class_shape_a0d74dcb2db0791b88b92f439bf4a6972} 
+\index{Shape@{Shape}!operator string@{operator string}}
+\index{operator string@{operator string}!Shape@{Shape}}
+\subsubsection{\texorpdfstring{operator string()}{operator string()}}
+{\footnotesize\ttfamily virtual Shape\+::operator string (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns a string that represents the \hyperlink{class_shape}{Shape}. \begin{DoxyReturn}{Returns}
+The string representing the \hyperlink{class_shape}{Shape}. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_segment_a28b3be893a35a0d73574354752c147fd}{Segment}, \hyperlink{class_polygon_a41c29b75f2463646af0f7bd604a4853d}{Polygon}, \hyperlink{class_triangle_acd8612cc20ffb71e543944c869e4ab81}{Triangle}, \hyperlink{class_circle_a4533a225b6d02699cea4045f47d3c7ff}{Circle}, and \hyperlink{class_composed_shape_aef491963b0e58209d1921973f2711c94}{Composed\+Shape}.
+
+\hypertarget{class_shape_abfc7a673b8a6d9a4d646dc15c771aa0d}{}\label{class_shape_abfc7a673b8a6d9a4d646dc15c771aa0d} 
+\index{Shape@{Shape}!rotation@{rotation}}
+\index{rotation@{rotation}!Shape@{Shape}}
+\subsubsection{\texorpdfstring{rotation()}{rotation()}}
+{\footnotesize\ttfamily virtual \hyperlink{class_shape}{Shape}$\ast$ Shape\+::rotation (\begin{DoxyParamCaption}\item[{const \hyperlink{class_vector2_d}{Vector2D} \&}]{rotation\+Center,  }\item[{const \hyperlink{class_radian_angle}{Radian\+Angle} \&}]{rotation\+Angle }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Rotates the shape. 
+\begin{DoxyParams}{Parameters}
+{\em rotation\+Center} & The center of the rotation. \\
+\hline
+{\em rotation\+Angle} & The angle of the rotation. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_segment_a46c1007c530f9be37ee7637e4ffdbf57}{Segment}, \hyperlink{class_polygon_a5a453f01700f97ca98b0487cd670b194}{Polygon}, \hyperlink{class_triangle_a663ca3c6bd7967265849bf1f8c8a464b}{Triangle}, \hyperlink{class_circle_ac676105f9868877ffcecc9c236de10bb}{Circle}, and \hyperlink{class_composed_shape_a9c4f0561d631b20c6cd56348d41a14dd}{Composed\+Shape}.
+
+\hypertarget{class_shape_ae1477829e1b06aad805b8b76312f87bc}{}\label{class_shape_ae1477829e1b06aad805b8b76312f87bc} 
+\index{Shape@{Shape}!save@{save}}
+\index{save@{save}!Shape@{Shape}}
+\subsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily virtual void Shape\+::save (\begin{DoxyParamCaption}\item[{const \hyperlink{class_save_visitor}{Save\+Visitor} $\ast$}]{save\+Visitor,  }\item[{const string \&}]{filename }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Saves the \hyperlink{class_shape}{Shape}. 
+\begin{DoxyParams}{Parameters}
+{\em save\+Visitor} & The \hyperlink{class_save_visitor}{Save\+Visitor} to use to save the shape. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_segment_a76c475fb193a0d7bb987da60dfc88ccd}{Segment}, \hyperlink{class_polygon_ad9adb867821b71e1aa8130dccbc9b37f}{Polygon}, \hyperlink{class_triangle_ae9ac3d633172f14d391d290a4467e1d3}{Triangle}, \hyperlink{class_circle_a91f2af619cc0465ae297ea88ce3b6c23}{Circle}, and \hyperlink{class_composed_shape_af189684eb5328b2fc13c694d7e637ff8}{Composed\+Shape}.
+
+\hypertarget{class_shape_a9f3d9c69476b41a375161b27949f765c}{}\label{class_shape_a9f3d9c69476b41a375161b27949f765c} 
+\index{Shape@{Shape}!set\+Color@{set\+Color}}
+\index{set\+Color@{set\+Color}!Shape@{Shape}}
+\subsubsection{\texorpdfstring{set\+Color()}{setColor()}}
+{\footnotesize\ttfamily void Shape\+::set\+Color (\begin{DoxyParamCaption}\item[{const \hyperlink{class_color}{Color} \&}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sets the color of the \hyperlink{class_shape}{Shape} 
+\begin{DoxyParams}{Parameters}
+{\em color} & The color of the \hyperlink{class_shape}{Shape}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_shape_ad3daca0d9bedf9aa15b92afab63c1de8}{}\label{class_shape_ad3daca0d9bedf9aa15b92afab63c1de8} 
+\index{Shape@{Shape}!translation@{translation}}
+\index{translation@{translation}!Shape@{Shape}}
+\subsubsection{\texorpdfstring{translation()}{translation()}}
+{\footnotesize\ttfamily virtual \hyperlink{class_shape}{Shape}$\ast$ Shape\+::translation (\begin{DoxyParamCaption}\item[{const \hyperlink{class_vector2_d}{Vector2D} \&}]{translation\+Vector }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Translate the shape using a translation vector. 
+\begin{DoxyParams}{Parameters}
+{\em translation\+Vector} & The translation vector to use for the translation. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_segment_a8592ee9b864b2ebc61ab1810fa7dc577}{Segment}, \hyperlink{class_polygon_ae828addfa5cffab547bcb16db1f275be}{Polygon}, \hyperlink{class_triangle_ac66208b0b633add41b915860f051cf44}{Triangle}, \hyperlink{class_circle_ad3b54b369f44baa1947aa3991f55e068}{Circle}, and \hyperlink{class_composed_shape_a31337a3fc33ac1fb929edbb6ff485dcc}{Composed\+Shape}.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_shape_ada7f3e97b3113c4725bf7ec7293b5a36}{}\label{class_shape_ada7f3e97b3113c4725bf7ec7293b5a36} 
+\index{Shape@{Shape}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Shape@{Shape}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{const \hyperlink{class_shape}{Shape} \&}]{shape }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_shape_a5b499b01e45f0dbd8bbc64172f169213}{}\label{class_shape_a5b499b01e45f0dbd8bbc64172f169213} 
+\index{Shape@{Shape}!\+\_\+color@{\+\_\+color}}
+\index{\+\_\+color@{\+\_\+color}!Shape@{Shape}}
+\subsubsection{\texorpdfstring{\+\_\+color}{\_color}}
+{\footnotesize\ttfamily \hyperlink{class_color}{Color} Shape\+::\+\_\+color\hspace{0.3cm}{\ttfamily [protected]}}
+
+Member \+\_\+color for color of the shape 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Shape/\hyperlink{_shape_8hpp}{Shape.\+hpp}\item 
+src/\+Shape/\hyperlink{_shape_8cpp}{Shape.\+cpp}\end{DoxyCompactItemize}

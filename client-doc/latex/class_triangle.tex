@@ -1,0 +1,237 @@
+\hypertarget{class_triangle}{}\section{Triangle Class Reference}
+\label{class_triangle}\index{Triangle@{Triangle}}
+
+
+{\ttfamily \#include $<$Triangle.\+hpp$>$}
+
+
+
+Inheritance diagram for Triangle\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=132pt]{class_triangle__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Triangle\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=136pt]{class_triangle__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_triangle_ab74304b451a87d4c72ece2fe442ca0a7}{Triangle} (const \hyperlink{class_vector2_d}{Vector2D} \&first\+Point, const \hyperlink{class_vector2_d}{Vector2D} \&second\+Point, const \hyperlink{class_vector2_d}{Vector2D} \&third\+Point, const \hyperlink{class_color}{Color} \&color=\hyperlink{class_color_a94697e8c9eb81124c5a7c1439e1e7348}{Color\+::get\+Color}(\char`\"{}black\char`\"{}))
+\item 
+const \hyperlink{class_vector2_d}{Vector2D} \hyperlink{class_triangle_aa40afc17cb09bf78a863b2e93e5cff45}{get\+First\+Point} () const
+\item 
+const \hyperlink{class_vector2_d}{Vector2D} \hyperlink{class_triangle_aa92252309b0e6d9ce26a1c9679b7cf19}{get\+Second\+Point} () const
+\item 
+const \hyperlink{class_vector2_d}{Vector2D} \hyperlink{class_triangle_aa44238e4272fe5a2b9e83974f58f95c6}{get\+Third\+Point} () const
+\item 
+void \hyperlink{class_triangle_a1fa834143ed718605959a227eba573b3}{draw} (\hyperlink{class_drawing_visitor}{Drawing\+Visitor} $\ast$visitor) const
+\item 
+\hyperlink{class_triangle_acd8612cc20ffb71e543944c869e4ab81}{operator string} () const
+\item 
+void \hyperlink{class_triangle_ae9ac3d633172f14d391d290a4467e1d3}{save} (const \hyperlink{class_save_visitor}{Save\+Visitor} $\ast$save\+Visitor, const string \&filename) const
+\item 
+\hyperlink{class_shape}{Shape} $\ast$ \hyperlink{class_triangle_ac66208b0b633add41b915860f051cf44}{translation} (const \hyperlink{class_vector2_d}{Vector2D} \&translation\+Vector) const
+\item 
+\hyperlink{class_shape}{Shape} $\ast$ \hyperlink{class_triangle_a45a3a9f74118c99b95c6d8e993773a71}{homothety} (const \hyperlink{class_vector2_d}{Vector2D} \&invariant\+Point, const double \&homothety\+Ratio) const
+\item 
+\hyperlink{class_shape}{Shape} $\ast$ \hyperlink{class_triangle_a663ca3c6bd7967265849bf1f8c8a464b}{rotation} (const \hyperlink{class_vector2_d}{Vector2D} \&rotation\+Center, const \hyperlink{class_radian_angle}{Radian\+Angle} \&rotation\+Angle) const
+\item 
+double \hyperlink{class_triangle_a5f7fa9fd678345063e50e3458d943a9b}{get\+Area} () const
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \hyperlink{class_triangle_a187347fa130a0bf0bf713db5afe3ee4b}{operator$<$$<$} (ostream \&os, const \hyperlink{class_triangle}{Triangle} \&triangle)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Represent a \hyperlink{class_triangle}{Triangle} It\textquotesingle{}s a \hyperlink{class_shape}{Shape} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_triangle_ab74304b451a87d4c72ece2fe442ca0a7}{}\label{class_triangle_ab74304b451a87d4c72ece2fe442ca0a7} 
+\index{Triangle@{Triangle}!Triangle@{Triangle}}
+\index{Triangle@{Triangle}!Triangle@{Triangle}}
+\subsubsection{\texorpdfstring{Triangle()}{Triangle()}}
+{\footnotesize\ttfamily Triangle\+::\+Triangle (\begin{DoxyParamCaption}\item[{const \hyperlink{class_vector2_d}{Vector2D} \&}]{first\+Point,  }\item[{const \hyperlink{class_vector2_d}{Vector2D} \&}]{second\+Point,  }\item[{const \hyperlink{class_vector2_d}{Vector2D} \&}]{third\+Point,  }\item[{const \hyperlink{class_color}{Color} \&}]{color = {\ttfamily \hyperlink{class_color_a94697e8c9eb81124c5a7c1439e1e7348}{Color\+::get\+Color}(\char`\"{}black\char`\"{})} }\end{DoxyParamCaption})}
+
+\hyperlink{class_triangle}{Triangle} constructor 
+\begin{DoxyParams}{Parameters}
+{\em first\+Point} & the first\+Point of the \hyperlink{class_triangle}{Triangle} \\
+\hline
+{\em second\+Point} & the second\+Point of the \hyperlink{class_triangle}{Triangle} \\
+\hline
+{\em third\+Point} & the third\+Point of the \hyperlink{class_triangle}{Triangle} \\
+\hline
+{\em color} & the color of the \hyperlink{class_triangle}{Triangle} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_triangle_a1fa834143ed718605959a227eba573b3}{}\label{class_triangle_a1fa834143ed718605959a227eba573b3} 
+\index{Triangle@{Triangle}!draw@{draw}}
+\index{draw@{draw}!Triangle@{Triangle}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Triangle\+::draw (\begin{DoxyParamCaption}\item[{\hyperlink{class_drawing_visitor}{Drawing\+Visitor} $\ast$}]{visitor }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Draws the \hyperlink{class_triangle}{Triangle} using a \hyperlink{class_drawing_visitor}{Drawing\+Visitor}. 
+\begin{DoxyParams}{Parameters}
+{\em visitor} & The \hyperlink{class_drawing_visitor}{Drawing\+Visitor} to use to draw the \hyperlink{class_triangle}{Triangle}. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{class_polygon_a245c526a6a65ea99f5549fe5243006d0}{Polygon}.
+
+\hypertarget{class_triangle_a5f7fa9fd678345063e50e3458d943a9b}{}\label{class_triangle_a5f7fa9fd678345063e50e3458d943a9b} 
+\index{Triangle@{Triangle}!get\+Area@{get\+Area}}
+\index{get\+Area@{get\+Area}!Triangle@{Triangle}}
+\subsubsection{\texorpdfstring{get\+Area()}{getArea()}}
+{\footnotesize\ttfamily double Triangle\+::get\+Area (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the area of the \hyperlink{class_triangle}{Triangle}. \begin{DoxyReturn}{Returns}
+The area of the \hyperlink{class_triangle}{Triangle}. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_polygon_ae1ae9dd5e5613f119af3e31488427b01}{Polygon}.
+
+\hypertarget{class_triangle_aa40afc17cb09bf78a863b2e93e5cff45}{}\label{class_triangle_aa40afc17cb09bf78a863b2e93e5cff45} 
+\index{Triangle@{Triangle}!get\+First\+Point@{get\+First\+Point}}
+\index{get\+First\+Point@{get\+First\+Point}!Triangle@{Triangle}}
+\subsubsection{\texorpdfstring{get\+First\+Point()}{getFirstPoint()}}
+{\footnotesize\ttfamily const \hyperlink{class_vector2_d}{Vector2D} Triangle\+::get\+First\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Getter of the first point \begin{DoxyReturn}{Returns}
+\hyperlink{class_vector2_d}{Vector2D} The first point 
+\end{DoxyReturn}
+\hypertarget{class_triangle_aa92252309b0e6d9ce26a1c9679b7cf19}{}\label{class_triangle_aa92252309b0e6d9ce26a1c9679b7cf19} 
+\index{Triangle@{Triangle}!get\+Second\+Point@{get\+Second\+Point}}
+\index{get\+Second\+Point@{get\+Second\+Point}!Triangle@{Triangle}}
+\subsubsection{\texorpdfstring{get\+Second\+Point()}{getSecondPoint()}}
+{\footnotesize\ttfamily const \hyperlink{class_vector2_d}{Vector2D} Triangle\+::get\+Second\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Getter of the second point \begin{DoxyReturn}{Returns}
+\hyperlink{class_vector2_d}{Vector2D} The second point 
+\end{DoxyReturn}
+\hypertarget{class_triangle_aa44238e4272fe5a2b9e83974f58f95c6}{}\label{class_triangle_aa44238e4272fe5a2b9e83974f58f95c6} 
+\index{Triangle@{Triangle}!get\+Third\+Point@{get\+Third\+Point}}
+\index{get\+Third\+Point@{get\+Third\+Point}!Triangle@{Triangle}}
+\subsubsection{\texorpdfstring{get\+Third\+Point()}{getThirdPoint()}}
+{\footnotesize\ttfamily const \hyperlink{class_vector2_d}{Vector2D} Triangle\+::get\+Third\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Getter of the third point \begin{DoxyReturn}{Returns}
+\hyperlink{class_vector2_d}{Vector2D} The third point 
+\end{DoxyReturn}
+\hypertarget{class_triangle_a45a3a9f74118c99b95c6d8e993773a71}{}\label{class_triangle_a45a3a9f74118c99b95c6d8e993773a71} 
+\index{Triangle@{Triangle}!homothety@{homothety}}
+\index{homothety@{homothety}!Triangle@{Triangle}}
+\subsubsection{\texorpdfstring{homothety()}{homothety()}}
+{\footnotesize\ttfamily \hyperlink{class_shape}{Shape} $\ast$ Triangle\+::homothety (\begin{DoxyParamCaption}\item[{const \hyperlink{class_vector2_d}{Vector2D} \&}]{invariant\+Point,  }\item[{const double \&}]{homothety\+Ratio }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Apply an homothety on the \hyperlink{class_triangle}{Triangle}. 
+\begin{DoxyParams}{Parameters}
+{\em invariant\+Point} & The center of the homothety. \\
+\hline
+{\em homothety\+Ratio} & The ratio of the homothety. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Shape$\ast$ the new triangle after the homotethy 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_polygon_a2b77c7ecbe9ca68664d7f7020181b791}{Polygon}.
+
+\hypertarget{class_triangle_acd8612cc20ffb71e543944c869e4ab81}{}\label{class_triangle_acd8612cc20ffb71e543944c869e4ab81} 
+\index{Triangle@{Triangle}!operator string@{operator string}}
+\index{operator string@{operator string}!Triangle@{Triangle}}
+\subsubsection{\texorpdfstring{operator string()}{operator string()}}
+{\footnotesize\ttfamily Triangle\+::operator string (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns a string that represents the \hyperlink{class_triangle}{Triangle}. \begin{DoxyReturn}{Returns}
+The string representing the \hyperlink{class_triangle}{Triangle}. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_polygon_a41c29b75f2463646af0f7bd604a4853d}{Polygon}.
+
+\hypertarget{class_triangle_a663ca3c6bd7967265849bf1f8c8a464b}{}\label{class_triangle_a663ca3c6bd7967265849bf1f8c8a464b} 
+\index{Triangle@{Triangle}!rotation@{rotation}}
+\index{rotation@{rotation}!Triangle@{Triangle}}
+\subsubsection{\texorpdfstring{rotation()}{rotation()}}
+{\footnotesize\ttfamily \hyperlink{class_shape}{Shape} $\ast$ Triangle\+::rotation (\begin{DoxyParamCaption}\item[{const \hyperlink{class_vector2_d}{Vector2D} \&}]{rotation\+Center,  }\item[{const \hyperlink{class_radian_angle}{Radian\+Angle} \&}]{rotation\+Angle }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Rotates the \hyperlink{class_triangle}{Triangle}. 
+\begin{DoxyParams}{Parameters}
+{\em rotation\+Center} & The center of the rotation. \\
+\hline
+{\em rotation\+Angle} & The angle of the rotation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Shape$\ast$ the new \hyperlink{class_triangle}{Triangle} after the rotation 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_polygon_a5a453f01700f97ca98b0487cd670b194}{Polygon}.
+
+\hypertarget{class_triangle_ae9ac3d633172f14d391d290a4467e1d3}{}\label{class_triangle_ae9ac3d633172f14d391d290a4467e1d3} 
+\index{Triangle@{Triangle}!save@{save}}
+\index{save@{save}!Triangle@{Triangle}}
+\subsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily void Triangle\+::save (\begin{DoxyParamCaption}\item[{const \hyperlink{class_save_visitor}{Save\+Visitor} $\ast$}]{save\+Visitor,  }\item[{const string \&}]{filename }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Saves the \hyperlink{class_triangle}{Triangle}. 
+\begin{DoxyParams}{Parameters}
+{\em save\+Visitor} & The \hyperlink{class_save_visitor}{Save\+Visitor} to use to save the \hyperlink{class_triangle}{Triangle}. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{class_polygon_ad9adb867821b71e1aa8130dccbc9b37f}{Polygon}.
+
+\hypertarget{class_triangle_ac66208b0b633add41b915860f051cf44}{}\label{class_triangle_ac66208b0b633add41b915860f051cf44} 
+\index{Triangle@{Triangle}!translation@{translation}}
+\index{translation@{translation}!Triangle@{Triangle}}
+\subsubsection{\texorpdfstring{translation()}{translation()}}
+{\footnotesize\ttfamily \hyperlink{class_shape}{Shape} $\ast$ Triangle\+::translation (\begin{DoxyParamCaption}\item[{const \hyperlink{class_vector2_d}{Vector2D} \&}]{translation\+Vector }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Translate the \hyperlink{class_triangle}{Triangle} using a translation vector. 
+\begin{DoxyParams}{Parameters}
+{\em translation\+Vector} & The translation vector to use for the translation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Shape$\ast$ the new \hyperlink{class_triangle}{Triangle} after the translation 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_polygon_ae828addfa5cffab547bcb16db1f275be}{Polygon}.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_triangle_a187347fa130a0bf0bf713db5afe3ee4b}{}\label{class_triangle_a187347fa130a0bf0bf713db5afe3ee4b} 
+\index{Triangle@{Triangle}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Triangle@{Triangle}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{const \hyperlink{class_triangle}{Triangle} \&}]{triangle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Shape/\hyperlink{_triangle_8hpp}{Triangle.\+hpp}\item 
+src/\+Shape/\hyperlink{_triangle_8cpp}{Triangle.\+cpp}\end{DoxyCompactItemize}

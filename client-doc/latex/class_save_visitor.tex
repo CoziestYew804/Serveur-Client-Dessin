@@ -1,0 +1,114 @@
+\hypertarget{class_save_visitor}{}\section{Save\+Visitor Class Reference}
+\label{class_save_visitor}\index{Save\+Visitor@{Save\+Visitor}}
+
+
+{\ttfamily \#include $<$Save\+Visitor.\+hpp$>$}
+
+
+
+Inheritance diagram for Save\+Visitor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{class_save_visitor__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_save_visitor_a2e17acabc377913b745edb2b391052c7}{save} (const \hyperlink{class_circle}{Circle} $\ast$circle, const string \&filename) const =0
+\item 
+virtual void \hyperlink{class_save_visitor_ad23764257a2a9836cb920be85ecbcd64}{save} (const \hyperlink{class_segment}{Segment} $\ast$segment, const string \&filename) const =0
+\item 
+virtual void \hyperlink{class_save_visitor_aa94777a1d367e937294ffd467835dc31}{save} (const \hyperlink{class_triangle}{Triangle} $\ast$triangle, const string \&filename) const =0
+\item 
+virtual void \hyperlink{class_save_visitor_aa24d8ccd081233a49ad31396e265af81}{save} (const \hyperlink{class_polygon}{Polygon} $\ast$polygon, const string \&filename) const =0
+\item 
+virtual void \hyperlink{class_save_visitor_a0d6549287b18302461912fe454a08af2}{save} (const \hyperlink{class_shape}{Shape} $\ast$shape, const string \&filename) const =0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The abstract class to implement the classes that will save the Shapes. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_save_visitor_a2e17acabc377913b745edb2b391052c7}{}\label{class_save_visitor_a2e17acabc377913b745edb2b391052c7} 
+\index{Save\+Visitor@{Save\+Visitor}!save@{save}}
+\index{save@{save}!Save\+Visitor@{Save\+Visitor}}
+\subsubsection{\texorpdfstring{save()}{save()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily virtual void Save\+Visitor\+::save (\begin{DoxyParamCaption}\item[{const \hyperlink{class_circle}{Circle} $\ast$}]{circle,  }\item[{const string \&}]{filename }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Saves the \hyperlink{class_circle}{Circle}. 
+\begin{DoxyParams}{Parameters}
+{\em circle} & The \hyperlink{class_circle}{Circle} to save. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_save_text_visitor_a2f083ffe6cda82e0c2fd31d601ba5e30}{Save\+Text\+Visitor}.
+
+\hypertarget{class_save_visitor_ad23764257a2a9836cb920be85ecbcd64}{}\label{class_save_visitor_ad23764257a2a9836cb920be85ecbcd64} 
+\index{Save\+Visitor@{Save\+Visitor}!save@{save}}
+\index{save@{save}!Save\+Visitor@{Save\+Visitor}}
+\subsubsection{\texorpdfstring{save()}{save()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily virtual void Save\+Visitor\+::save (\begin{DoxyParamCaption}\item[{const \hyperlink{class_segment}{Segment} $\ast$}]{segment,  }\item[{const string \&}]{filename }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Saves the \hyperlink{class_segment}{Segment}. 
+\begin{DoxyParams}{Parameters}
+{\em segment} & The \hyperlink{class_segment}{Segment} to save. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_save_text_visitor_aded2d7fe5898a3fd55bf4d15ed405416}{Save\+Text\+Visitor}.
+
+\hypertarget{class_save_visitor_aa94777a1d367e937294ffd467835dc31}{}\label{class_save_visitor_aa94777a1d367e937294ffd467835dc31} 
+\index{Save\+Visitor@{Save\+Visitor}!save@{save}}
+\index{save@{save}!Save\+Visitor@{Save\+Visitor}}
+\subsubsection{\texorpdfstring{save()}{save()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily virtual void Save\+Visitor\+::save (\begin{DoxyParamCaption}\item[{const \hyperlink{class_triangle}{Triangle} $\ast$}]{triangle,  }\item[{const string \&}]{filename }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Saves the \hyperlink{class_triangle}{Triangle}. 
+\begin{DoxyParams}{Parameters}
+{\em triangle} & The \hyperlink{class_triangle}{Triangle} to save. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_save_text_visitor_a1ac892a59b374572d44fc69b9b3528c0}{Save\+Text\+Visitor}.
+
+\hypertarget{class_save_visitor_aa24d8ccd081233a49ad31396e265af81}{}\label{class_save_visitor_aa24d8ccd081233a49ad31396e265af81} 
+\index{Save\+Visitor@{Save\+Visitor}!save@{save}}
+\index{save@{save}!Save\+Visitor@{Save\+Visitor}}
+\subsubsection{\texorpdfstring{save()}{save()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily virtual void Save\+Visitor\+::save (\begin{DoxyParamCaption}\item[{const \hyperlink{class_polygon}{Polygon} $\ast$}]{polygon,  }\item[{const string \&}]{filename }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Saves the \hyperlink{class_polygon}{Polygon}. 
+\begin{DoxyParams}{Parameters}
+{\em polygon} & The \hyperlink{class_polygon}{Polygon} to save. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_save_text_visitor_a9b4292ce11779caf26556cf6abc5db0f}{Save\+Text\+Visitor}.
+
+\hypertarget{class_save_visitor_a0d6549287b18302461912fe454a08af2}{}\label{class_save_visitor_a0d6549287b18302461912fe454a08af2} 
+\index{Save\+Visitor@{Save\+Visitor}!save@{save}}
+\index{save@{save}!Save\+Visitor@{Save\+Visitor}}
+\subsubsection{\texorpdfstring{save()}{save()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily virtual void Save\+Visitor\+::save (\begin{DoxyParamCaption}\item[{const \hyperlink{class_shape}{Shape} $\ast$}]{shape,  }\item[{const string \&}]{filename }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Saves the \hyperlink{class_shape}{Shape} 
+\begin{DoxyParams}{Parameters}
+{\em shape} & The \hyperlink{class_shape}{Shape} to save. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_save_text_visitor_aa73d6b9e27e6b95d058c089fb4900514}{Save\+Text\+Visitor}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Visitor/\hyperlink{_save_visitor_8hpp}{Save\+Visitor.\+hpp}\end{DoxyCompactItemize}

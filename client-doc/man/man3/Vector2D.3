@@ -1,0 +1,73 @@
+.TH "Vector2D" 3 "Thu Nov 17 2016" "Version 1" "Drawing Client" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Vector2D \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Vector2D\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBVector2D\fP (const double &x=0, const double &y=0)"
+.br
+.ti -1c
+.RI "virtual \fB~Vector2D\fP ()"
+.br
+.ti -1c
+.RI "double \fBgetX\fP () const"
+.br
+.ti -1c
+.RI "double \fBgetY\fP () const"
+.br
+.ti -1c
+.RI "\fBoperator string\fP () const"
+.br
+.ti -1c
+.RI "const \fBVector2D\fP \fBoperator+\fP (const \fBVector2D\fP &rhv) const"
+.br
+.ti -1c
+.RI "const \fBVector2D\fP \fBoperator*\fP (const double &a) const"
+.br
+.ti -1c
+.RI "const \fBVector2D\fP \fBoperator\-\fP () const"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "ostream & \fBoperator<<\fP (ostream &os, const \fBVector2D\fP &vector)"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Vector2D::Vector2D (const double & x = \fC0\fP, const double & y = \fC0\fP)"
+
+.SS "Vector2D::~Vector2D ()\fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "double Vector2D::getX () const\fC [inline]\fP"
+
+.SS "double Vector2D::getY () const\fC [inline]\fP"
+
+.SS "Vector2D::operator string () const"
+
+.SS "const \fBVector2D\fP Vector2D::operator* (const double & a) const"
+
+.SS "const \fBVector2D\fP Vector2D::operator+ (const \fBVector2D\fP & rhv) const"
+
+.SS "const \fBVector2D\fP Vector2D::operator\- () const"
+
+.SH "Friends And Related Function Documentation"
+.PP 
+.SS "ostream& operator<< (ostream & os, const \fBVector2D\fP & vector)\fC [friend]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Drawing Client from the source code\&.

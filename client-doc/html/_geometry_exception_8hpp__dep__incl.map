@@ -1,0 +1,35 @@
+<map id="src/Geometry/GeometryException.hpp" name="src/Geometry/GeometryException.hpp">
+<area shape="rect" id="node2" href="$_geometry_exception_8cpp.html" title="src/Geometry/GeometryException.cpp" alt="" coords="1416,80,1661,107"/>
+<area shape="rect" id="node3" href="$_radian_angle_8hpp.html" title="src/Geometry/RadianAngle.hpp" alt="" coords="1686,80,1890,107"/>
+<area shape="rect" id="node4" href="$_radian_angle_8cpp.html" title="src/Geometry/RadianAngle.cpp" alt="" coords="1577,155,1781,181"/>
+<area shape="rect" id="node5" href="$_vector2_d_8hpp.html" title="src/Geometry/Vector2D.hpp" alt="" coords="1805,155,1990,181"/>
+<area shape="rect" id="node6" href="$_vector2_d_8cpp.html" title="src/Geometry/Vector2D.cpp" alt="" coords="1614,229,1799,256"/>
+<area shape="rect" id="node7" href="$_shape_8hpp.html" title="src/Shape/Shape.hpp" alt="" coords="1824,229,1971,256"/>
+<area shape="rect" id="node34" href="$test-vector2_d_8cpp.html" title="src/Tests/test&#45;vector2D.cpp" alt="" coords="1995,229,2181,256"/>
+<area shape="rect" id="node8" href="$_circle_8hpp.html" title="src/Shape/Circle.hpp" alt="" coords="1333,379,1477,405"/>
+<area shape="rect" id="node21" href="$_composed_shape_8hpp.html" title="src/Shape/ComposedShape.hpp" alt="" coords="384,379,595,405"/>
+<area shape="rect" id="node24" href="$_polygon_8hpp.html" title="src/Shape/Polygon.hpp" alt="" coords="1819,304,1976,331"/>
+<area shape="rect" id="node30" href="$_segment_8hpp.html" title="src/Shape/Segment.hpp" alt="" coords="2805,379,2968,405"/>
+<area shape="rect" id="node33" href="$_shape_8cpp.html" title="src/Shape/Shape.cpp" alt="" coords="2051,304,2197,331"/>
+<area shape="rect" id="node9" href="$_circle_creator_8cpp.html" title="src/Loader/CircleCreator.cpp" alt="" coords="1067,461,1256,487"/>
+<area shape="rect" id="node10" href="$main_8cpp.html" title="src/Main/main.cpp" alt="" coords="1877,543,2006,569"/>
+<area shape="rect" id="node11" href="$_qt_drawer_8hpp.html" title="src/Visitor/QtDrawer.hpp" alt="" coords="2323,461,2490,487"/>
+<area shape="rect" id="node12" href="$test-qtdrawer_8cpp.html" title="src/Tests/test&#45;qtdrawer.cpp" alt="" coords="1097,543,1279,569"/>
+<area shape="rect" id="node13" href="$test-socket_8cpp.html" title="src/Tests/test&#45;socket.cpp" alt="" coords="2591,543,2761,569"/>
+<area shape="rect" id="node15" href="$_circle_8cpp.html" title="src/Shape/Circle.cpp" alt="" coords="704,461,848,487"/>
+<area shape="rect" id="node16" href="$test-loader_8cpp.html" title="src/Tests/test&#45;loader.cpp" alt="" coords="1573,461,1739,487"/>
+<area shape="rect" id="node17" href="$test-saving_8cpp.html" title="src/Tests/test&#45;saving.cpp" alt="" coords="872,461,1043,487"/>
+<area shape="rect" id="node18" href="$test-shape_8cpp.html" title="src/Tests/test&#45;shape.cpp" alt="" coords="1382,461,1549,487"/>
+<area shape="rect" id="node19" href="$_save_text_visitor_8cpp.html" title="src/Visitor/SaveTextVisitor.cpp" alt="" coords="1815,461,2017,487"/>
+<area shape="rect" id="node20" href="$_server_drawer_8cpp.html" title="src/Visitor/ServerDrawer.cpp" alt="" coords="2791,461,2982,487"/>
+<area shape="rect" id="node14" href="$_qt_drawer_8cpp.html" title="src/Visitor/QtDrawer.cpp" alt="" coords="2323,543,2490,569"/>
+<area shape="rect" id="node22" href="$_composed_shape_creator_8cpp.html" title="src/Loader/ComposedShape\lCreator.cpp" alt="" coords="5,453,192,495"/>
+<area shape="rect" id="node23" href="$_composed_shape_8cpp.html" title="src/Shape/ComposedShape.cpp" alt="" coords="216,461,427,487"/>
+<area shape="rect" id="node25" href="$_polygon_creator_8cpp.html" title="src/Loader/PolygonCreator.cpp" alt="" coords="1865,379,2068,405"/>
+<area shape="rect" id="node26" href="$_triangle_8hpp.html" title="src/Shape/Triangle.hpp" alt="" coords="2093,379,2249,405"/>
+<area shape="rect" id="node29" href="$_polygon_8cpp.html" title="src/Shape/Polygon.cpp" alt="" coords="2375,379,2532,405"/>
+<area shape="rect" id="node27" href="$_triangle_creator_8cpp.html" title="src/Loader/TriangleCreator.cpp" alt="" coords="2514,461,2715,487"/>
+<area shape="rect" id="node28" href="$_triangle_8cpp.html" title="src/Shape/Triangle.cpp" alt="" coords="2143,461,2299,487"/>
+<area shape="rect" id="node31" href="$_segment_creator_8cpp.html" title="src/Loader/SegmentCreator.cpp" alt="" coords="3159,461,3366,487"/>
+<area shape="rect" id="node32" href="$_segment_8cpp.html" title="src/Shape/Segment.cpp" alt="" coords="3391,461,3553,487"/>
+</map>

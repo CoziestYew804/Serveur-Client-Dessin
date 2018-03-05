@@ -1,0 +1,274 @@
+\hypertarget{class_polygon}{}\section{Polygon Class Reference}
+\label{class_polygon}\index{Polygon@{Polygon}}
+
+
+{\ttfamily \#include $<$Polygon.\+hpp$>$}
+
+
+
+Inheritance diagram for Polygon\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=132pt]{class_polygon__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Polygon\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=136pt]{class_polygon__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_polygon_a9010c30fc3b029a2cc26199c15f915b6}{Polygon} (const \hyperlink{class_color}{Color} \&color=\hyperlink{class_color_a94697e8c9eb81124c5a7c1439e1e7348}{Color\+::get\+Color}(\char`\"{}black\char`\"{}))
+\item 
+void \hyperlink{class_polygon_a9a5b91783fca1fd154bc97a1e416500b}{add\+Point} (const \hyperlink{class_vector2_d}{Vector2D} \&point)
+\item 
+const \hyperlink{class_vector2_d}{Vector2D} \hyperlink{class_polygon_ae488fc076f6a3ca6b36ae6217b38195d}{get\+Point} (int index) const
+\item 
+const int \hyperlink{class_polygon_a07f0c79bf97308da04c7bce322331cab}{get\+Points\+Size} () const
+\item 
+void \hyperlink{class_polygon_a245c526a6a65ea99f5549fe5243006d0}{draw} (\hyperlink{class_drawing_visitor}{Drawing\+Visitor} $\ast$visitor) const
+\item 
+\hyperlink{class_polygon_a41c29b75f2463646af0f7bd604a4853d}{operator string} () const
+\item 
+void \hyperlink{class_polygon_ad9adb867821b71e1aa8130dccbc9b37f}{save} (const \hyperlink{class_save_visitor}{Save\+Visitor} $\ast$save\+Visitor, const string \&filename) const
+\item 
+\hyperlink{class_shape}{Shape} $\ast$ \hyperlink{class_polygon_ae828addfa5cffab547bcb16db1f275be}{translation} (const \hyperlink{class_vector2_d}{Vector2D} \&translation\+Vector) const
+\item 
+\hyperlink{class_shape}{Shape} $\ast$ \hyperlink{class_polygon_a2b77c7ecbe9ca68664d7f7020181b791}{homothety} (const \hyperlink{class_vector2_d}{Vector2D} \&invariant\+Point, const double \&homothety\+Ratio) const
+\item 
+\hyperlink{class_shape}{Shape} $\ast$ \hyperlink{class_polygon_a5a453f01700f97ca98b0487cd670b194}{rotation} (const \hyperlink{class_vector2_d}{Vector2D} \&rotation\+Center, const \hyperlink{class_radian_angle}{Radian\+Angle} \&rotation\+Angle) const
+\item 
+double \hyperlink{class_polygon_ae1ae9dd5e5613f119af3e31488427b01}{get\+Area} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{class_vector2_d}{Vector2D} $>$ \hyperlink{class_polygon_a36bc7384f59aac1a731f1701af587916}{\+\_\+points}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \hyperlink{class_polygon_af7ce19139e0c1e3637615abf41b8befb}{operator$<$$<$} (ostream \&os, const \hyperlink{class_polygon}{Polygon} \&polygon)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represent a \hyperlink{class_polygon}{Polygon} It\textquotesingle{}s a \hyperlink{class_shape}{Shape} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_polygon_a9010c30fc3b029a2cc26199c15f915b6}{}\label{class_polygon_a9010c30fc3b029a2cc26199c15f915b6} 
+\index{Polygon@{Polygon}!Polygon@{Polygon}}
+\index{Polygon@{Polygon}!Polygon@{Polygon}}
+\subsubsection{\texorpdfstring{Polygon()}{Polygon()}}
+{\footnotesize\ttfamily Polygon\+::\+Polygon (\begin{DoxyParamCaption}\item[{const \hyperlink{class_color}{Color} \&}]{color = {\ttfamily \hyperlink{class_color_a94697e8c9eb81124c5a7c1439e1e7348}{Color\+::get\+Color}(\char`\"{}black\char`\"{})} }\end{DoxyParamCaption})}
+
+\hyperlink{class_polygon}{Polygon} constructor 
+\begin{DoxyParams}{Parameters}
+{\em color} & the color of the \hyperlink{class_polygon}{Polygon} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_polygon_a9a5b91783fca1fd154bc97a1e416500b}{}\label{class_polygon_a9a5b91783fca1fd154bc97a1e416500b} 
+\index{Polygon@{Polygon}!add\+Point@{add\+Point}}
+\index{add\+Point@{add\+Point}!Polygon@{Polygon}}
+\subsubsection{\texorpdfstring{add\+Point()}{addPoint()}}
+{\footnotesize\ttfamily void Polygon\+::add\+Point (\begin{DoxyParamCaption}\item[{const \hyperlink{class_vector2_d}{Vector2D} \&}]{point }\end{DoxyParamCaption})}
+
+Function to add a point on the \hyperlink{class_polygon}{Polygon} 
+\begin{DoxyParams}{Parameters}
+{\em point} & point to add \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_polygon_a245c526a6a65ea99f5549fe5243006d0}{}\label{class_polygon_a245c526a6a65ea99f5549fe5243006d0} 
+\index{Polygon@{Polygon}!draw@{draw}}
+\index{draw@{draw}!Polygon@{Polygon}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Polygon\+::draw (\begin{DoxyParamCaption}\item[{\hyperlink{class_drawing_visitor}{Drawing\+Visitor} $\ast$}]{visitor }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Draws the \hyperlink{class_polygon}{Polygon} using a \hyperlink{class_drawing_visitor}{Drawing\+Visitor}. 
+\begin{DoxyParams}{Parameters}
+{\em visitor} & The \hyperlink{class_drawing_visitor}{Drawing\+Visitor} to use to draw the \hyperlink{class_polygon}{Polygon}. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_shape_ae67fc6d39dd33759b65ff6112b21eab7}{Shape}.
+
+
+
+Reimplemented in \hyperlink{class_triangle_a1fa834143ed718605959a227eba573b3}{Triangle}.
+
+\hypertarget{class_polygon_ae1ae9dd5e5613f119af3e31488427b01}{}\label{class_polygon_ae1ae9dd5e5613f119af3e31488427b01} 
+\index{Polygon@{Polygon}!get\+Area@{get\+Area}}
+\index{get\+Area@{get\+Area}!Polygon@{Polygon}}
+\subsubsection{\texorpdfstring{get\+Area()}{getArea()}}
+{\footnotesize\ttfamily double Polygon\+::get\+Area (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the area of the \hyperlink{class_polygon}{Polygon}. \begin{DoxyReturn}{Returns}
+The area of the \hyperlink{class_polygon}{Polygon}. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_shape_ad9454ee04617290547e7529180b1beae}{Shape}.
+
+
+
+Reimplemented in \hyperlink{class_triangle_a5f7fa9fd678345063e50e3458d943a9b}{Triangle}.
+
+\hypertarget{class_polygon_ae488fc076f6a3ca6b36ae6217b38195d}{}\label{class_polygon_ae488fc076f6a3ca6b36ae6217b38195d} 
+\index{Polygon@{Polygon}!get\+Point@{get\+Point}}
+\index{get\+Point@{get\+Point}!Polygon@{Polygon}}
+\subsubsection{\texorpdfstring{get\+Point()}{getPoint()}}
+{\footnotesize\ttfamily const \hyperlink{class_vector2_d}{Vector2D} Polygon\+::get\+Point (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const}
+
+Function to get a point of \+\_\+points with index  index the index of point to get \begin{DoxyReturn}{Returns}
+\hyperlink{class_vector2_d}{Vector2D} the point 
+\end{DoxyReturn}
+\hypertarget{class_polygon_a07f0c79bf97308da04c7bce322331cab}{}\label{class_polygon_a07f0c79bf97308da04c7bce322331cab} 
+\index{Polygon@{Polygon}!get\+Points\+Size@{get\+Points\+Size}}
+\index{get\+Points\+Size@{get\+Points\+Size}!Polygon@{Polygon}}
+\subsubsection{\texorpdfstring{get\+Points\+Size()}{getPointsSize()}}
+{\footnotesize\ttfamily const int Polygon\+::get\+Points\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Function to get the size of \+\_\+points \begin{DoxyReturn}{Returns}
+int the size of \+\_\+points 
+\end{DoxyReturn}
+\hypertarget{class_polygon_a2b77c7ecbe9ca68664d7f7020181b791}{}\label{class_polygon_a2b77c7ecbe9ca68664d7f7020181b791} 
+\index{Polygon@{Polygon}!homothety@{homothety}}
+\index{homothety@{homothety}!Polygon@{Polygon}}
+\subsubsection{\texorpdfstring{homothety()}{homothety()}}
+{\footnotesize\ttfamily \hyperlink{class_shape}{Shape} $\ast$ Polygon\+::homothety (\begin{DoxyParamCaption}\item[{const \hyperlink{class_vector2_d}{Vector2D} \&}]{invariant\+Point,  }\item[{const double \&}]{homothety\+Ratio }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Apply an homothety on the \hyperlink{class_polygon}{Polygon}. 
+\begin{DoxyParams}{Parameters}
+{\em invariant\+Point} & The center of the homothety. \\
+\hline
+{\em homothety\+Ratio} & The ratio of the homothety. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Shape$\ast$ the new \hyperlink{class_polygon}{Polygon} after homothety 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_shape_a91f18af3004ba210db5c91084c50beb9}{Shape}.
+
+
+
+Reimplemented in \hyperlink{class_triangle_a45a3a9f74118c99b95c6d8e993773a71}{Triangle}.
+
+\hypertarget{class_polygon_a41c29b75f2463646af0f7bd604a4853d}{}\label{class_polygon_a41c29b75f2463646af0f7bd604a4853d} 
+\index{Polygon@{Polygon}!operator string@{operator string}}
+\index{operator string@{operator string}!Polygon@{Polygon}}
+\subsubsection{\texorpdfstring{operator string()}{operator string()}}
+{\footnotesize\ttfamily Polygon\+::operator string (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns a string that represents the \hyperlink{class_polygon}{Polygon}. \begin{DoxyReturn}{Returns}
+The string representing the \hyperlink{class_polygon}{Polygon}. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_shape_a0d74dcb2db0791b88b92f439bf4a6972}{Shape}.
+
+
+
+Reimplemented in \hyperlink{class_triangle_acd8612cc20ffb71e543944c869e4ab81}{Triangle}.
+
+\hypertarget{class_polygon_a5a453f01700f97ca98b0487cd670b194}{}\label{class_polygon_a5a453f01700f97ca98b0487cd670b194} 
+\index{Polygon@{Polygon}!rotation@{rotation}}
+\index{rotation@{rotation}!Polygon@{Polygon}}
+\subsubsection{\texorpdfstring{rotation()}{rotation()}}
+{\footnotesize\ttfamily \hyperlink{class_shape}{Shape} $\ast$ Polygon\+::rotation (\begin{DoxyParamCaption}\item[{const \hyperlink{class_vector2_d}{Vector2D} \&}]{rotation\+Center,  }\item[{const \hyperlink{class_radian_angle}{Radian\+Angle} \&}]{rotation\+Angle }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Rotates the \hyperlink{class_polygon}{Polygon}. 
+\begin{DoxyParams}{Parameters}
+{\em rotation\+Center} & The center of the rotation. \\
+\hline
+{\em rotation\+Angle} & The angle of the rotation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Shape$\ast$ the new \hyperlink{class_polygon}{Polygon} after rotation 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_shape_abfc7a673b8a6d9a4d646dc15c771aa0d}{Shape}.
+
+
+
+Reimplemented in \hyperlink{class_triangle_a663ca3c6bd7967265849bf1f8c8a464b}{Triangle}.
+
+\hypertarget{class_polygon_ad9adb867821b71e1aa8130dccbc9b37f}{}\label{class_polygon_ad9adb867821b71e1aa8130dccbc9b37f} 
+\index{Polygon@{Polygon}!save@{save}}
+\index{save@{save}!Polygon@{Polygon}}
+\subsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily void Polygon\+::save (\begin{DoxyParamCaption}\item[{const \hyperlink{class_save_visitor}{Save\+Visitor} $\ast$}]{save\+Visitor,  }\item[{const string \&}]{filename }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Saves the \hyperlink{class_polygon}{Polygon}. 
+\begin{DoxyParams}{Parameters}
+{\em save\+Visitor} & The \hyperlink{class_save_visitor}{Save\+Visitor} to use to save the \hyperlink{class_polygon}{Polygon}. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_shape_ae1477829e1b06aad805b8b76312f87bc}{Shape}.
+
+
+
+Reimplemented in \hyperlink{class_triangle_ae9ac3d633172f14d391d290a4467e1d3}{Triangle}.
+
+\hypertarget{class_polygon_ae828addfa5cffab547bcb16db1f275be}{}\label{class_polygon_ae828addfa5cffab547bcb16db1f275be} 
+\index{Polygon@{Polygon}!translation@{translation}}
+\index{translation@{translation}!Polygon@{Polygon}}
+\subsubsection{\texorpdfstring{translation()}{translation()}}
+{\footnotesize\ttfamily \hyperlink{class_shape}{Shape} $\ast$ Polygon\+::translation (\begin{DoxyParamCaption}\item[{const \hyperlink{class_vector2_d}{Vector2D} \&}]{translation\+Vector }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Translate the \hyperlink{class_polygon}{Polygon} using a translation vector. 
+\begin{DoxyParams}{Parameters}
+{\em translation\+Vector} & The translation vector to use for the translation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Shape$\ast$ the new \hyperlink{class_polygon}{Polygon} after Translation 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_shape_ad3daca0d9bedf9aa15b92afab63c1de8}{Shape}.
+
+
+
+Reimplemented in \hyperlink{class_triangle_ac66208b0b633add41b915860f051cf44}{Triangle}.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_polygon_af7ce19139e0c1e3637615abf41b8befb}{}\label{class_polygon_af7ce19139e0c1e3637615abf41b8befb} 
+\index{Polygon@{Polygon}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Polygon@{Polygon}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{const \hyperlink{class_polygon}{Polygon} \&}]{polygon }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_polygon_a36bc7384f59aac1a731f1701af587916}{}\label{class_polygon_a36bc7384f59aac1a731f1701af587916} 
+\index{Polygon@{Polygon}!\+\_\+points@{\+\_\+points}}
+\index{\+\_\+points@{\+\_\+points}!Polygon@{Polygon}}
+\subsubsection{\texorpdfstring{\+\_\+points}{\_points}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{class_vector2_d}{Vector2D}$>$ Polygon\+::\+\_\+points\hspace{0.3cm}{\ttfamily [protected]}}
+
+Array of \hyperlink{class_vector2_d}{Vector2D} for store points of the \hyperlink{class_polygon}{Polygon} 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Shape/\hyperlink{_polygon_8hpp}{Polygon.\+hpp}\item 
+src/\+Shape/\hyperlink{_polygon_8cpp}{Polygon.\+cpp}\end{DoxyCompactItemize}

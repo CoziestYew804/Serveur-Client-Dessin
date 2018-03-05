@@ -1,0 +1,233 @@
+\hypertarget{class_composed_shape}{}\section{Composed\+Shape Class Reference}
+\label{class_composed_shape}\index{Composed\+Shape@{Composed\+Shape}}
+
+
+{\ttfamily \#include $<$Composed\+Shape.\+hpp$>$}
+
+
+
+Inheritance diagram for Composed\+Shape\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{class_composed_shape__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Composed\+Shape\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{class_composed_shape__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_composed_shape_a048c0d943a560bba5f5b4c9d9a18afc9}{Composed\+Shape} (\hyperlink{class_color}{Color} color=\hyperlink{class_color_a94697e8c9eb81124c5a7c1439e1e7348}{Color\+::get\+Color}(\char`\"{}black\char`\"{}))
+\item 
+void \hyperlink{class_composed_shape_a5f78e498ae77eeefc868d28ae8c8aa99}{add\+Shape} (\hyperlink{class_shape}{Shape} $\ast$shape)
+\item 
+void \hyperlink{class_composed_shape_a30f69734aa983bca56574ff4e5fd1723}{draw} (\hyperlink{class_drawing_visitor}{Drawing\+Visitor} $\ast$visitor) const
+\item 
+\hyperlink{class_composed_shape_aef491963b0e58209d1921973f2711c94}{operator string} () const
+\item 
+void \hyperlink{class_composed_shape_af189684eb5328b2fc13c694d7e637ff8}{save} (const \hyperlink{class_save_visitor}{Save\+Visitor} $\ast$save\+Visitor, const string \&filename) const
+\item 
+\hyperlink{class_shape}{Shape} $\ast$ \hyperlink{class_composed_shape_a31337a3fc33ac1fb929edbb6ff485dcc}{translation} (const \hyperlink{class_vector2_d}{Vector2D} \&translation\+Vector) const
+\item 
+\hyperlink{class_shape}{Shape} $\ast$ \hyperlink{class_composed_shape_acff645310f05924aaf66b0de71b2307a}{homothety} (const \hyperlink{class_vector2_d}{Vector2D} \&invariant\+Point, const double \&homothety\+Ratio) const
+\item 
+\hyperlink{class_shape}{Shape} $\ast$ \hyperlink{class_composed_shape_a9c4f0561d631b20c6cd56348d41a14dd}{rotation} (const \hyperlink{class_vector2_d}{Vector2D} \&rotation\+Center, const \hyperlink{class_radian_angle}{Radian\+Angle} \&rotation\+Angle) const
+\item 
+double \hyperlink{class_composed_shape_a89b3457e1699afeb86805afad627d2c7}{get\+Area} () const
+\item 
+int \hyperlink{class_composed_shape_ab33696ffeb5f3840cf0c5b75c8911787}{get\+Shape\+Number} () const
+\item 
+const \hyperlink{class_shape}{Shape} $\ast$ \hyperlink{class_composed_shape_a144d7d70317e5123f081d36689254ea8}{get\+Shape} (unsigned int i) const
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \hyperlink{class_composed_shape_a68ff1b04d83134ec6f6e949b45b63016}{operator$<$$<$} (ostream \&os, const \hyperlink{class_composed_shape}{Composed\+Shape} \&composed\+Shape)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Represent a \hyperlink{class_composed_shape}{Composed\+Shape} It\textquotesingle{}s a \hyperlink{class_shape}{Shape} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_composed_shape_a048c0d943a560bba5f5b4c9d9a18afc9}{}\label{class_composed_shape_a048c0d943a560bba5f5b4c9d9a18afc9} 
+\index{Composed\+Shape@{Composed\+Shape}!Composed\+Shape@{Composed\+Shape}}
+\index{Composed\+Shape@{Composed\+Shape}!Composed\+Shape@{Composed\+Shape}}
+\subsubsection{\texorpdfstring{Composed\+Shape()}{ComposedShape()}}
+{\footnotesize\ttfamily Composed\+Shape\+::\+Composed\+Shape (\begin{DoxyParamCaption}\item[{\hyperlink{class_color}{Color}}]{color = {\ttfamily \hyperlink{class_color_a94697e8c9eb81124c5a7c1439e1e7348}{Color\+::get\+Color}(\char`\"{}black\char`\"{})} }\end{DoxyParamCaption})}
+
+\hyperlink{class_composed_shape}{Composed\+Shape} constructors 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_composed_shape_a5f78e498ae77eeefc868d28ae8c8aa99}{}\label{class_composed_shape_a5f78e498ae77eeefc868d28ae8c8aa99} 
+\index{Composed\+Shape@{Composed\+Shape}!add\+Shape@{add\+Shape}}
+\index{add\+Shape@{add\+Shape}!Composed\+Shape@{Composed\+Shape}}
+\subsubsection{\texorpdfstring{add\+Shape()}{addShape()}}
+{\footnotesize\ttfamily void Composed\+Shape\+::add\+Shape (\begin{DoxyParamCaption}\item[{\hyperlink{class_shape}{Shape} $\ast$}]{shape }\end{DoxyParamCaption})}
+
+Function to add a point on the \hyperlink{class_composed_shape}{Composed\+Shape} 
+\begin{DoxyParams}{Parameters}
+{\em point} & point to add \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_composed_shape_a30f69734aa983bca56574ff4e5fd1723}{}\label{class_composed_shape_a30f69734aa983bca56574ff4e5fd1723} 
+\index{Composed\+Shape@{Composed\+Shape}!draw@{draw}}
+\index{draw@{draw}!Composed\+Shape@{Composed\+Shape}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Composed\+Shape\+::draw (\begin{DoxyParamCaption}\item[{\hyperlink{class_drawing_visitor}{Drawing\+Visitor} $\ast$}]{visitor }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Draws the \hyperlink{class_composed_shape}{Composed\+Shape} using a \hyperlink{class_drawing_visitor}{Drawing\+Visitor}. 
+\begin{DoxyParams}{Parameters}
+{\em visitor} & The \hyperlink{class_drawing_visitor}{Drawing\+Visitor} to use to draw the \hyperlink{class_composed_shape}{Composed\+Shape}. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_shape_ae67fc6d39dd33759b65ff6112b21eab7}{Shape}.
+
+\hypertarget{class_composed_shape_a89b3457e1699afeb86805afad627d2c7}{}\label{class_composed_shape_a89b3457e1699afeb86805afad627d2c7} 
+\index{Composed\+Shape@{Composed\+Shape}!get\+Area@{get\+Area}}
+\index{get\+Area@{get\+Area}!Composed\+Shape@{Composed\+Shape}}
+\subsubsection{\texorpdfstring{get\+Area()}{getArea()}}
+{\footnotesize\ttfamily double Composed\+Shape\+::get\+Area (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the area of the \hyperlink{class_composed_shape}{Composed\+Shape}. \begin{DoxyReturn}{Returns}
+The area of the \hyperlink{class_composed_shape}{Composed\+Shape}. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_shape_ad9454ee04617290547e7529180b1beae}{Shape}.
+
+\hypertarget{class_composed_shape_a144d7d70317e5123f081d36689254ea8}{}\label{class_composed_shape_a144d7d70317e5123f081d36689254ea8} 
+\index{Composed\+Shape@{Composed\+Shape}!get\+Shape@{get\+Shape}}
+\index{get\+Shape@{get\+Shape}!Composed\+Shape@{Composed\+Shape}}
+\subsubsection{\texorpdfstring{get\+Shape()}{getShape()}}
+{\footnotesize\ttfamily const \hyperlink{class_shape}{Shape} $\ast$ Composed\+Shape\+::get\+Shape (\begin{DoxyParamCaption}\item[{unsigned int}]{i }\end{DoxyParamCaption}) const}
+
+Returns the i-\/th shape in this \hyperlink{class_composed_shape}{Composed\+Shape} \begin{DoxyReturn}{Returns}
+The i-\/th shape in this \hyperlink{class_composed_shape}{Composed\+Shape} 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Shape\+Exception} & if the index is wrong. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_composed_shape_ab33696ffeb5f3840cf0c5b75c8911787}{}\label{class_composed_shape_ab33696ffeb5f3840cf0c5b75c8911787} 
+\index{Composed\+Shape@{Composed\+Shape}!get\+Shape\+Number@{get\+Shape\+Number}}
+\index{get\+Shape\+Number@{get\+Shape\+Number}!Composed\+Shape@{Composed\+Shape}}
+\subsubsection{\texorpdfstring{get\+Shape\+Number()}{getShapeNumber()}}
+{\footnotesize\ttfamily int Composed\+Shape\+::get\+Shape\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the number of Shapes composing this \hyperlink{class_composed_shape}{Composed\+Shape}. \begin{DoxyReturn}{Returns}
+The number of shapes composing this \hyperlink{class_composed_shape}{Composed\+Shape}. 
+\end{DoxyReturn}
+\hypertarget{class_composed_shape_acff645310f05924aaf66b0de71b2307a}{}\label{class_composed_shape_acff645310f05924aaf66b0de71b2307a} 
+\index{Composed\+Shape@{Composed\+Shape}!homothety@{homothety}}
+\index{homothety@{homothety}!Composed\+Shape@{Composed\+Shape}}
+\subsubsection{\texorpdfstring{homothety()}{homothety()}}
+{\footnotesize\ttfamily \hyperlink{class_shape}{Shape} $\ast$ Composed\+Shape\+::homothety (\begin{DoxyParamCaption}\item[{const \hyperlink{class_vector2_d}{Vector2D} \&}]{invariant\+Point,  }\item[{const double \&}]{homothety\+Ratio }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Apply an homothety on the \hyperlink{class_composed_shape}{Composed\+Shape}. 
+\begin{DoxyParams}{Parameters}
+{\em invariant\+Point} & The center of the homothety. \\
+\hline
+{\em homothety\+Ratio} & The ratio of the homothety. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Shape$\ast$ the new \hyperlink{class_composed_shape}{Composed\+Shape} after homothety 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_shape_a91f18af3004ba210db5c91084c50beb9}{Shape}.
+
+\hypertarget{class_composed_shape_aef491963b0e58209d1921973f2711c94}{}\label{class_composed_shape_aef491963b0e58209d1921973f2711c94} 
+\index{Composed\+Shape@{Composed\+Shape}!operator string@{operator string}}
+\index{operator string@{operator string}!Composed\+Shape@{Composed\+Shape}}
+\subsubsection{\texorpdfstring{operator string()}{operator string()}}
+{\footnotesize\ttfamily Composed\+Shape\+::operator string (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns a string that represents the \hyperlink{class_composed_shape}{Composed\+Shape}. \begin{DoxyReturn}{Returns}
+The string representing the \hyperlink{class_composed_shape}{Composed\+Shape}. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_shape_a0d74dcb2db0791b88b92f439bf4a6972}{Shape}.
+
+\hypertarget{class_composed_shape_a9c4f0561d631b20c6cd56348d41a14dd}{}\label{class_composed_shape_a9c4f0561d631b20c6cd56348d41a14dd} 
+\index{Composed\+Shape@{Composed\+Shape}!rotation@{rotation}}
+\index{rotation@{rotation}!Composed\+Shape@{Composed\+Shape}}
+\subsubsection{\texorpdfstring{rotation()}{rotation()}}
+{\footnotesize\ttfamily \hyperlink{class_shape}{Shape} $\ast$ Composed\+Shape\+::rotation (\begin{DoxyParamCaption}\item[{const \hyperlink{class_vector2_d}{Vector2D} \&}]{rotation\+Center,  }\item[{const \hyperlink{class_radian_angle}{Radian\+Angle} \&}]{rotation\+Angle }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Rotates the \hyperlink{class_composed_shape}{Composed\+Shape}. 
+\begin{DoxyParams}{Parameters}
+{\em rotation\+Center} & The center of the rotation. \\
+\hline
+{\em rotation\+Angle} & The angle of the rotation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Shape$\ast$ the new \hyperlink{class_composed_shape}{Composed\+Shape} after rotation 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_shape_abfc7a673b8a6d9a4d646dc15c771aa0d}{Shape}.
+
+\hypertarget{class_composed_shape_af189684eb5328b2fc13c694d7e637ff8}{}\label{class_composed_shape_af189684eb5328b2fc13c694d7e637ff8} 
+\index{Composed\+Shape@{Composed\+Shape}!save@{save}}
+\index{save@{save}!Composed\+Shape@{Composed\+Shape}}
+\subsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily void Composed\+Shape\+::save (\begin{DoxyParamCaption}\item[{const \hyperlink{class_save_visitor}{Save\+Visitor} $\ast$}]{save\+Visitor,  }\item[{const string \&}]{filename }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Saves the \hyperlink{class_composed_shape}{Composed\+Shape}. 
+\begin{DoxyParams}{Parameters}
+{\em save\+Visitor} & The \hyperlink{class_save_visitor}{Save\+Visitor} to use to save the \hyperlink{class_composed_shape}{Composed\+Shape}. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_shape_ae1477829e1b06aad805b8b76312f87bc}{Shape}.
+
+\hypertarget{class_composed_shape_a31337a3fc33ac1fb929edbb6ff485dcc}{}\label{class_composed_shape_a31337a3fc33ac1fb929edbb6ff485dcc} 
+\index{Composed\+Shape@{Composed\+Shape}!translation@{translation}}
+\index{translation@{translation}!Composed\+Shape@{Composed\+Shape}}
+\subsubsection{\texorpdfstring{translation()}{translation()}}
+{\footnotesize\ttfamily \hyperlink{class_shape}{Shape} $\ast$ Composed\+Shape\+::translation (\begin{DoxyParamCaption}\item[{const \hyperlink{class_vector2_d}{Vector2D} \&}]{translation\+Vector }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Translate the \hyperlink{class_composed_shape}{Composed\+Shape} using a translation vector. 
+\begin{DoxyParams}{Parameters}
+{\em translation\+Vector} & The translation vector to use for the translation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Shape$\ast$ the new \hyperlink{class_composed_shape}{Composed\+Shape} after Translation 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_shape_ad3daca0d9bedf9aa15b92afab63c1de8}{Shape}.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_composed_shape_a68ff1b04d83134ec6f6e949b45b63016}{}\label{class_composed_shape_a68ff1b04d83134ec6f6e949b45b63016} 
+\index{Composed\+Shape@{Composed\+Shape}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Composed\+Shape@{Composed\+Shape}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{const \hyperlink{class_composed_shape}{Composed\+Shape} \&}]{composed\+Shape }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Shape/\hyperlink{_composed_shape_8hpp}{Composed\+Shape.\+hpp}\item 
+src/\+Shape/\hyperlink{_composed_shape_8cpp}{Composed\+Shape.\+cpp}\end{DoxyCompactItemize}

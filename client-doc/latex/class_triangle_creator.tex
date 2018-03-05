@@ -1,0 +1,76 @@
+\hypertarget{class_triangle_creator}{}\section{Triangle\+Creator Class Reference}
+\label{class_triangle_creator}\index{Triangle\+Creator@{Triangle\+Creator}}
+
+
+{\ttfamily \#include $<$Triangle\+Creator.\+hpp$>$}
+
+
+
+Inheritance diagram for Triangle\+Creator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{class_triangle_creator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Triangle\+Creator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{class_triangle_creator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_triangle_creator_a89e29090c1f072d81562e448a98a138d}{Triangle\+Creator} (\hyperlink{class_shape_creator_link}{Shape\+Creator\+Link} $\ast$next)
+\item 
+virtual \hyperlink{class_shape}{Shape} $\ast$ \hyperlink{class_triangle_creator_a8698d657d98a7be93aeaf86b2434bbb3}{create\+Shape\+Spe} (const string \&shape\+String) const
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class \hyperlink{class_triangle_creator}{Triangle\+Creator} Link of the C\+OR for build \hyperlink{class_triangle}{Triangle} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_triangle_creator_a89e29090c1f072d81562e448a98a138d}{}\label{class_triangle_creator_a89e29090c1f072d81562e448a98a138d} 
+\index{Triangle\+Creator@{Triangle\+Creator}!Triangle\+Creator@{Triangle\+Creator}}
+\index{Triangle\+Creator@{Triangle\+Creator}!Triangle\+Creator@{Triangle\+Creator}}
+\subsubsection{\texorpdfstring{Triangle\+Creator()}{TriangleCreator()}}
+{\footnotesize\ttfamily Triangle\+Creator\+::\+Triangle\+Creator (\begin{DoxyParamCaption}\item[{\hyperlink{class_shape_creator_link}{Shape\+Creator\+Link} $\ast$}]{next }\end{DoxyParamCaption})}
+
+Constructor of \hyperlink{class_triangle_creator}{Triangle\+Creator} 
+\begin{DoxyParams}{Parameters}
+{\em next} & The next \hyperlink{class_shape_creator_link}{Shape\+Creator\+Link} if this one fails \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_triangle_creator_a8698d657d98a7be93aeaf86b2434bbb3}{}\label{class_triangle_creator_a8698d657d98a7be93aeaf86b2434bbb3} 
+\index{Triangle\+Creator@{Triangle\+Creator}!create\+Shape\+Spe@{create\+Shape\+Spe}}
+\index{create\+Shape\+Spe@{create\+Shape\+Spe}!Triangle\+Creator@{Triangle\+Creator}}
+\subsubsection{\texorpdfstring{create\+Shape\+Spe()}{createShapeSpe()}}
+{\footnotesize\ttfamily \hyperlink{class_shape}{Shape} $\ast$ Triangle\+Creator\+::create\+Shape\+Spe (\begin{DoxyParamCaption}\item[{const string \&}]{shape\+String }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Try to create a \hyperlink{class_triangle}{Triangle} with the string 
+\begin{DoxyParams}{Parameters}
+{\em shape\+String} & the string with informations of the shape \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Shape$\ast$ wich were created 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_shape_creator_link_a036ecc845946d23b36335e9077308bcf}{Shape\+Creator\+Link}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Loader/\hyperlink{_triangle_creator_8hpp}{Triangle\+Creator.\+hpp}\item 
+src/\+Loader/\hyperlink{_triangle_creator_8cpp}{Triangle\+Creator.\+cpp}\end{DoxyCompactItemize}

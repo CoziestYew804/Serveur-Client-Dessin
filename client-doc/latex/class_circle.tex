@@ -1,0 +1,224 @@
+\hypertarget{class_circle}{}\section{Circle Class Reference}
+\label{class_circle}\index{Circle@{Circle}}
+
+
+{\ttfamily \#include $<$Circle.\+hpp$>$}
+
+
+
+Inheritance diagram for Circle\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=124pt]{class_circle__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Circle\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=132pt]{class_circle__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_circle_a68b0710e21ca715da8bb16c269f8e0ba}{Circle} (const \hyperlink{class_vector2_d}{Vector2D} \&center, const double \&diameter, const \hyperlink{class_color}{Color} \&color=\hyperlink{class_color_a94697e8c9eb81124c5a7c1439e1e7348}{Color\+::get\+Color}(\char`\"{}black\char`\"{}))
+\item 
+const \hyperlink{class_vector2_d}{Vector2D} \hyperlink{class_circle_a4ed140857e0622e97377f60993c4ec44}{get\+Center} () const
+\item 
+const double \hyperlink{class_circle_af54e2c9adcf8e6f53ec51560fff849d7}{get\+Diameter} () const
+\item 
+void \hyperlink{class_circle_a4c2dc8107eab8b562328743cafdddd79}{draw} (\hyperlink{class_drawing_visitor}{Drawing\+Visitor} $\ast$visitor) const
+\item 
+\hyperlink{class_circle_a4533a225b6d02699cea4045f47d3c7ff}{operator string} () const
+\item 
+void \hyperlink{class_circle_a91f2af619cc0465ae297ea88ce3b6c23}{save} (const \hyperlink{class_save_visitor}{Save\+Visitor} $\ast$save\+Visitor, const string \&filename) const
+\item 
+\hyperlink{class_shape}{Shape} $\ast$ \hyperlink{class_circle_ad3b54b369f44baa1947aa3991f55e068}{translation} (const \hyperlink{class_vector2_d}{Vector2D} \&translation\+Vector) const
+\item 
+\hyperlink{class_shape}{Shape} $\ast$ \hyperlink{class_circle_a031f188681977c2cf6ba2e80e30fb5ce}{homothety} (const \hyperlink{class_vector2_d}{Vector2D} \&invariant\+Point, const double \&homothety\+Ratio) const
+\item 
+\hyperlink{class_shape}{Shape} $\ast$ \hyperlink{class_circle_ac676105f9868877ffcecc9c236de10bb}{rotation} (const \hyperlink{class_vector2_d}{Vector2D} \&rotation\+Center, const \hyperlink{class_radian_angle}{Radian\+Angle} \&rotation\+Angle) const
+\item 
+double \hyperlink{class_circle_a7bfb5ab5c8d4f11890407a2483ad61ee}{get\+Area} () const
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \hyperlink{class_circle_aff122891f2c5c68c5016c71add530da2}{operator$<$$<$} (ostream \&os, const \hyperlink{class_circle}{Circle} \&circle)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Represent a \hyperlink{class_circle}{Circle} It\textquotesingle{}s a \hyperlink{class_shape}{Shape} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_circle_a68b0710e21ca715da8bb16c269f8e0ba}{}\label{class_circle_a68b0710e21ca715da8bb16c269f8e0ba} 
+\index{Circle@{Circle}!Circle@{Circle}}
+\index{Circle@{Circle}!Circle@{Circle}}
+\subsubsection{\texorpdfstring{Circle()}{Circle()}}
+{\footnotesize\ttfamily Circle\+::\+Circle (\begin{DoxyParamCaption}\item[{const \hyperlink{class_vector2_d}{Vector2D} \&}]{center,  }\item[{const double \&}]{diameter,  }\item[{const \hyperlink{class_color}{Color} \&}]{color = {\ttfamily \hyperlink{class_color_a94697e8c9eb81124c5a7c1439e1e7348}{Color\+::get\+Color}(\char`\"{}black\char`\"{})} }\end{DoxyParamCaption})}
+
+\hyperlink{class_circle}{Circle} constructor 
+\begin{DoxyParams}{Parameters}
+{\em center} & The center point of the \hyperlink{class_circle}{Circle} \\
+\hline
+{\em diameter} & The diameter of the \hyperlink{class_circle}{Circle} \\
+\hline
+{\em color} & The color of the \hyperlink{class_circle}{Circle} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_circle_a4c2dc8107eab8b562328743cafdddd79}{}\label{class_circle_a4c2dc8107eab8b562328743cafdddd79} 
+\index{Circle@{Circle}!draw@{draw}}
+\index{draw@{draw}!Circle@{Circle}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Circle\+::draw (\begin{DoxyParamCaption}\item[{\hyperlink{class_drawing_visitor}{Drawing\+Visitor} $\ast$}]{visitor }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Draws the \hyperlink{class_circle}{Circle} using a \hyperlink{class_drawing_visitor}{Drawing\+Visitor}. 
+\begin{DoxyParams}{Parameters}
+{\em visitor} & The \hyperlink{class_drawing_visitor}{Drawing\+Visitor} to use to draw the \hyperlink{class_circle}{Circle}. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_shape_ae67fc6d39dd33759b65ff6112b21eab7}{Shape}.
+
+\hypertarget{class_circle_a7bfb5ab5c8d4f11890407a2483ad61ee}{}\label{class_circle_a7bfb5ab5c8d4f11890407a2483ad61ee} 
+\index{Circle@{Circle}!get\+Area@{get\+Area}}
+\index{get\+Area@{get\+Area}!Circle@{Circle}}
+\subsubsection{\texorpdfstring{get\+Area()}{getArea()}}
+{\footnotesize\ttfamily double Circle\+::get\+Area (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the area of the \hyperlink{class_circle}{Circle}. \begin{DoxyReturn}{Returns}
+The area of the \hyperlink{class_circle}{Circle}. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_shape_ad9454ee04617290547e7529180b1beae}{Shape}.
+
+\hypertarget{class_circle_a4ed140857e0622e97377f60993c4ec44}{}\label{class_circle_a4ed140857e0622e97377f60993c4ec44} 
+\index{Circle@{Circle}!get\+Center@{get\+Center}}
+\index{get\+Center@{get\+Center}!Circle@{Circle}}
+\subsubsection{\texorpdfstring{get\+Center()}{getCenter()}}
+{\footnotesize\ttfamily const \hyperlink{class_vector2_d}{Vector2D} Circle\+::get\+Center (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Gets the center of the circle \begin{DoxyReturn}{Returns}
+\hyperlink{class_vector2_d}{Vector2D} the center of the circle 
+\end{DoxyReturn}
+\hypertarget{class_circle_af54e2c9adcf8e6f53ec51560fff849d7}{}\label{class_circle_af54e2c9adcf8e6f53ec51560fff849d7} 
+\index{Circle@{Circle}!get\+Diameter@{get\+Diameter}}
+\index{get\+Diameter@{get\+Diameter}!Circle@{Circle}}
+\subsubsection{\texorpdfstring{get\+Diameter()}{getDiameter()}}
+{\footnotesize\ttfamily const double Circle\+::get\+Diameter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Gets the diameter of the circle \begin{DoxyReturn}{Returns}
+double the diameter of the circle 
+\end{DoxyReturn}
+\hypertarget{class_circle_a031f188681977c2cf6ba2e80e30fb5ce}{}\label{class_circle_a031f188681977c2cf6ba2e80e30fb5ce} 
+\index{Circle@{Circle}!homothety@{homothety}}
+\index{homothety@{homothety}!Circle@{Circle}}
+\subsubsection{\texorpdfstring{homothety()}{homothety()}}
+{\footnotesize\ttfamily \hyperlink{class_shape}{Shape} $\ast$ Circle\+::homothety (\begin{DoxyParamCaption}\item[{const \hyperlink{class_vector2_d}{Vector2D} \&}]{invariant\+Point,  }\item[{const double \&}]{homothety\+Ratio }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Apply an homothety on the \hyperlink{class_circle}{Circle}. 
+\begin{DoxyParams}{Parameters}
+{\em invariant\+Point} & The center of the homothety. \\
+\hline
+{\em homothety\+Ratio} & The ratio of the homothety. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Shape$\ast$ the new circle after homothety 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_shape_a91f18af3004ba210db5c91084c50beb9}{Shape}.
+
+\hypertarget{class_circle_a4533a225b6d02699cea4045f47d3c7ff}{}\label{class_circle_a4533a225b6d02699cea4045f47d3c7ff} 
+\index{Circle@{Circle}!operator string@{operator string}}
+\index{operator string@{operator string}!Circle@{Circle}}
+\subsubsection{\texorpdfstring{operator string()}{operator string()}}
+{\footnotesize\ttfamily Circle\+::operator string (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns a string that represents the \hyperlink{class_circle}{Circle}. \begin{DoxyReturn}{Returns}
+The string representing the \hyperlink{class_circle}{Circle}. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_shape_a0d74dcb2db0791b88b92f439bf4a6972}{Shape}.
+
+\hypertarget{class_circle_ac676105f9868877ffcecc9c236de10bb}{}\label{class_circle_ac676105f9868877ffcecc9c236de10bb} 
+\index{Circle@{Circle}!rotation@{rotation}}
+\index{rotation@{rotation}!Circle@{Circle}}
+\subsubsection{\texorpdfstring{rotation()}{rotation()}}
+{\footnotesize\ttfamily \hyperlink{class_shape}{Shape} $\ast$ Circle\+::rotation (\begin{DoxyParamCaption}\item[{const \hyperlink{class_vector2_d}{Vector2D} \&}]{rotation\+Center,  }\item[{const \hyperlink{class_radian_angle}{Radian\+Angle} \&}]{rotation\+Angle }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Rotates the \hyperlink{class_circle}{Circle}. 
+\begin{DoxyParams}{Parameters}
+{\em rotation\+Center} & The center of the rotation. \\
+\hline
+{\em rotation\+Angle} & The angle of the rotation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Shape$\ast$ the new circle after rotation 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_shape_abfc7a673b8a6d9a4d646dc15c771aa0d}{Shape}.
+
+\hypertarget{class_circle_a91f2af619cc0465ae297ea88ce3b6c23}{}\label{class_circle_a91f2af619cc0465ae297ea88ce3b6c23} 
+\index{Circle@{Circle}!save@{save}}
+\index{save@{save}!Circle@{Circle}}
+\subsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily void Circle\+::save (\begin{DoxyParamCaption}\item[{const \hyperlink{class_save_visitor}{Save\+Visitor} $\ast$}]{save\+Visitor,  }\item[{const string \&}]{filename }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Saves the \hyperlink{class_circle}{Circle}. 
+\begin{DoxyParams}{Parameters}
+{\em save\+Visitor} & The \hyperlink{class_save_visitor}{Save\+Visitor} to use to save the \hyperlink{class_circle}{Circle}. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_shape_ae1477829e1b06aad805b8b76312f87bc}{Shape}.
+
+\hypertarget{class_circle_ad3b54b369f44baa1947aa3991f55e068}{}\label{class_circle_ad3b54b369f44baa1947aa3991f55e068} 
+\index{Circle@{Circle}!translation@{translation}}
+\index{translation@{translation}!Circle@{Circle}}
+\subsubsection{\texorpdfstring{translation()}{translation()}}
+{\footnotesize\ttfamily \hyperlink{class_shape}{Shape} $\ast$ Circle\+::translation (\begin{DoxyParamCaption}\item[{const \hyperlink{class_vector2_d}{Vector2D} \&}]{translation\+Vector }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Translate the \hyperlink{class_circle}{Circle} using a translation vector. 
+\begin{DoxyParams}{Parameters}
+{\em translation\+Vector} & The translation vector to use for the translation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Shape$\ast$ the new circle after Translation 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_shape_ad3daca0d9bedf9aa15b92afab63c1de8}{Shape}.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_circle_aff122891f2c5c68c5016c71add530da2}{}\label{class_circle_aff122891f2c5c68c5016c71add530da2} 
+\index{Circle@{Circle}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Circle@{Circle}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{const \hyperlink{class_circle}{Circle} \&}]{circle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Shape/\hyperlink{_circle_8hpp}{Circle.\+hpp}\item 
+src/\+Shape/\hyperlink{_circle_8cpp}{Circle.\+cpp}\end{DoxyCompactItemize}

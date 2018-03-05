@@ -1,0 +1,9 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$class_shape_creator.html" title="ShapeCreator" alt="" coords="5,107,108,133"/>
+<area shape="rect" id="node2" href="$class_shape_creator_link.html" title="ShapeCreatorLink" alt="" coords="156,107,283,133"/>
+<area shape="rect" id="node3" href="$class_circle_creator.html" title="CircleCreator" alt="" coords="364,5,463,32"/>
+<area shape="rect" id="node4" href="$class_composed_shape_creator.html" title="ComposedShapeCreator" alt="" coords="331,56,496,83"/>
+<area shape="rect" id="node5" href="$class_polygon_creator.html" title="PolygonCreator" alt="" coords="357,107,469,133"/>
+<area shape="rect" id="node6" href="$class_segment_creator.html" title="SegmentCreator" alt="" coords="355,157,472,184"/>
+<area shape="rect" id="node7" href="$class_triangle_creator.html" title="TriangleCreator" alt="" coords="358,208,469,235"/>
+</map>

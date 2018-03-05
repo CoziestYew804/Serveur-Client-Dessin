@@ -1,0 +1,114 @@
+\hypertarget{class_drawing_visitor}{}\section{Drawing\+Visitor Class Reference}
+\label{class_drawing_visitor}\index{Drawing\+Visitor@{Drawing\+Visitor}}
+
+
+{\ttfamily \#include $<$Drawing\+Visitor.\+hpp$>$}
+
+
+
+Inheritance diagram for Drawing\+Visitor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{class_drawing_visitor__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_drawing_visitor_a287f6d770c755c1c3bc144fb08b65030}{draw} (const \hyperlink{class_circle}{Circle} $\ast$circle)=0
+\item 
+virtual void \hyperlink{class_drawing_visitor_a8a95018de31a7e3d7a067c347478ffde}{draw} (const \hyperlink{class_segment}{Segment} $\ast$segment)=0
+\item 
+virtual void \hyperlink{class_drawing_visitor_a178aa7e1bb9cfbd538d7de0dbfa2d4b1}{draw} (const \hyperlink{class_triangle}{Triangle} $\ast$triangle)=0
+\item 
+virtual void \hyperlink{class_drawing_visitor_a771a2110a3afe4e87688bddd65657a46}{draw} (const \hyperlink{class_polygon}{Polygon} $\ast$polygon)=0
+\item 
+virtual void \hyperlink{class_drawing_visitor_ad3d9e3028449f65ea2c405c74c4a55b4}{draw} (const \hyperlink{class_shape}{Shape} $\ast$shape)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The abstract base class for all drawers. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_drawing_visitor_a287f6d770c755c1c3bc144fb08b65030}{}\label{class_drawing_visitor_a287f6d770c755c1c3bc144fb08b65030} 
+\index{Drawing\+Visitor@{Drawing\+Visitor}!draw@{draw}}
+\index{draw@{draw}!Drawing\+Visitor@{Drawing\+Visitor}}
+\subsubsection{\texorpdfstring{draw()}{draw()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily virtual void Drawing\+Visitor\+::draw (\begin{DoxyParamCaption}\item[{const \hyperlink{class_circle}{Circle} $\ast$}]{circle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Draws the \hyperlink{class_circle}{Circle}. 
+\begin{DoxyParams}{Parameters}
+{\em circle} & The \hyperlink{class_circle}{Circle} to draw. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_qt_drawer_a1e9a6ad76355f26fc9b41b54b28a04f4}{Qt\+Drawer}, and \hyperlink{class_server_drawer_a70bd94ed93c913b53d689fb8fc5dddc9}{Server\+Drawer}.
+
+\hypertarget{class_drawing_visitor_a8a95018de31a7e3d7a067c347478ffde}{}\label{class_drawing_visitor_a8a95018de31a7e3d7a067c347478ffde} 
+\index{Drawing\+Visitor@{Drawing\+Visitor}!draw@{draw}}
+\index{draw@{draw}!Drawing\+Visitor@{Drawing\+Visitor}}
+\subsubsection{\texorpdfstring{draw()}{draw()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily virtual void Drawing\+Visitor\+::draw (\begin{DoxyParamCaption}\item[{const \hyperlink{class_segment}{Segment} $\ast$}]{segment }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Draws the \hyperlink{class_segment}{Segment}. 
+\begin{DoxyParams}{Parameters}
+{\em segment} & The \hyperlink{class_segment}{Segment} to draw. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_qt_drawer_afe2f299e83092e1d4676c8b3fd4a3452}{Qt\+Drawer}, and \hyperlink{class_server_drawer_a2bec9e70a1111d59b6c2d7de0908d780}{Server\+Drawer}.
+
+\hypertarget{class_drawing_visitor_a178aa7e1bb9cfbd538d7de0dbfa2d4b1}{}\label{class_drawing_visitor_a178aa7e1bb9cfbd538d7de0dbfa2d4b1} 
+\index{Drawing\+Visitor@{Drawing\+Visitor}!draw@{draw}}
+\index{draw@{draw}!Drawing\+Visitor@{Drawing\+Visitor}}
+\subsubsection{\texorpdfstring{draw()}{draw()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily virtual void Drawing\+Visitor\+::draw (\begin{DoxyParamCaption}\item[{const \hyperlink{class_triangle}{Triangle} $\ast$}]{triangle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Draws the \hyperlink{class_triangle}{Triangle}. 
+\begin{DoxyParams}{Parameters}
+{\em triangle} & The \hyperlink{class_triangle}{Triangle} to draw. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_qt_drawer_a6d68080c84447a76b34810ca0330fd2c}{Qt\+Drawer}, and \hyperlink{class_server_drawer_aad913eff7f5c248003ef70ec8c09d2b2}{Server\+Drawer}.
+
+\hypertarget{class_drawing_visitor_a771a2110a3afe4e87688bddd65657a46}{}\label{class_drawing_visitor_a771a2110a3afe4e87688bddd65657a46} 
+\index{Drawing\+Visitor@{Drawing\+Visitor}!draw@{draw}}
+\index{draw@{draw}!Drawing\+Visitor@{Drawing\+Visitor}}
+\subsubsection{\texorpdfstring{draw()}{draw()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily virtual void Drawing\+Visitor\+::draw (\begin{DoxyParamCaption}\item[{const \hyperlink{class_polygon}{Polygon} $\ast$}]{polygon }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Draws the \hyperlink{class_polygon}{Polygon}. 
+\begin{DoxyParams}{Parameters}
+{\em polygon} & The \hyperlink{class_polygon}{Polygon} to draw. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_qt_drawer_a977cc5f97827eb36063f8429ef044727}{Qt\+Drawer}, and \hyperlink{class_server_drawer_acd973f89e7618d67fcd8db364df0b6bf}{Server\+Drawer}.
+
+\hypertarget{class_drawing_visitor_ad3d9e3028449f65ea2c405c74c4a55b4}{}\label{class_drawing_visitor_ad3d9e3028449f65ea2c405c74c4a55b4} 
+\index{Drawing\+Visitor@{Drawing\+Visitor}!draw@{draw}}
+\index{draw@{draw}!Drawing\+Visitor@{Drawing\+Visitor}}
+\subsubsection{\texorpdfstring{draw()}{draw()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily virtual void Drawing\+Visitor\+::draw (\begin{DoxyParamCaption}\item[{const \hyperlink{class_shape}{Shape} $\ast$}]{shape }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Draws the \hyperlink{class_shape}{Shape}. 
+\begin{DoxyParams}{Parameters}
+{\em polygon} & The \hyperlink{class_shape}{Shape} to draw. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_qt_drawer_a031e3b3242e341fa6e6fdcbf96b3dbfe}{Qt\+Drawer}, and \hyperlink{class_server_drawer_a071fa49ab9edc71554b32aaaf7422b7f}{Server\+Drawer}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Visitor/\hyperlink{_drawing_visitor_8hpp}{Drawing\+Visitor.\+hpp}\end{DoxyCompactItemize}

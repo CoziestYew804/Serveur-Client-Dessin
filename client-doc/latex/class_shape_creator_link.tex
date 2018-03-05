@@ -1,0 +1,109 @@
+\hypertarget{class_shape_creator_link}{}\section{Shape\+Creator\+Link Class Reference}
+\label{class_shape_creator_link}\index{Shape\+Creator\+Link@{Shape\+Creator\+Link}}
+
+
+{\ttfamily \#include $<$Shape\+Creator\+Link.\+hpp$>$}
+
+
+
+Inheritance diagram for Shape\+Creator\+Link\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_shape_creator_link__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Shape\+Creator\+Link\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{class_shape_creator_link__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_shape_creator_link_a625ba24fc48628d42ddd206e65489de0}{Shape\+Creator\+Link} (\hyperlink{class_shape_creator_link}{Shape\+Creator\+Link} $\ast$next)
+\item 
+\hyperlink{class_shape}{Shape} $\ast$ \hyperlink{class_shape_creator_link_af372255e987c8fa587620e16dd406ccc}{create\+Shape} (const string \&shape\+String) const
+\item 
+virtual \hyperlink{class_shape}{Shape} $\ast$ \hyperlink{class_shape_creator_link_a036ecc845946d23b36335e9077308bcf}{create\+Shape\+Spe} (const string \&shape\+String) const =0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_shape_creator_link}{Shape\+Creator\+Link} $\ast$ \hyperlink{class_shape_creator_link_a53714771bfbce43504eac24c4acf7e6f}{\+\_\+next}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract class \hyperlink{class_shape_creator_link}{Shape\+Creator\+Link} for link the C\+OR of creation shape 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_shape_creator_link_a625ba24fc48628d42ddd206e65489de0}{}\label{class_shape_creator_link_a625ba24fc48628d42ddd206e65489de0} 
+\index{Shape\+Creator\+Link@{Shape\+Creator\+Link}!Shape\+Creator\+Link@{Shape\+Creator\+Link}}
+\index{Shape\+Creator\+Link@{Shape\+Creator\+Link}!Shape\+Creator\+Link@{Shape\+Creator\+Link}}
+\subsubsection{\texorpdfstring{Shape\+Creator\+Link()}{ShapeCreatorLink()}}
+{\footnotesize\ttfamily Shape\+Creator\+Link\+::\+Shape\+Creator\+Link (\begin{DoxyParamCaption}\item[{\hyperlink{class_shape_creator_link}{Shape\+Creator\+Link} $\ast$}]{next }\end{DoxyParamCaption})}
+
+Constructor of \hyperlink{class_shape_creator_link}{Shape\+Creator\+Link} 
+\begin{DoxyParams}{Parameters}
+{\em next} & A pointer of the next \hyperlink{class_shape_creator_link}{Shape\+Creator\+Link} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_shape_creator_link_af372255e987c8fa587620e16dd406ccc}{}\label{class_shape_creator_link_af372255e987c8fa587620e16dd406ccc} 
+\index{Shape\+Creator\+Link@{Shape\+Creator\+Link}!create\+Shape@{create\+Shape}}
+\index{create\+Shape@{create\+Shape}!Shape\+Creator\+Link@{Shape\+Creator\+Link}}
+\subsubsection{\texorpdfstring{create\+Shape()}{createShape()}}
+{\footnotesize\ttfamily \hyperlink{class_shape}{Shape} $\ast$ Shape\+Creator\+Link\+::create\+Shape (\begin{DoxyParamCaption}\item[{const string \&}]{shape\+String }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Try to create a shape with string If it doesn\textquotesingle{}t work, try with the next \hyperlink{class_shape_creator_link}{Shape\+Creator\+Link} 
+\begin{DoxyParams}{Parameters}
+{\em shape\+String} & The string for build the shape \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A Shape$\ast$ build with shape\+String 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_shape_creator_a515bc403dc9de02b126d52480ba6ee78}{Shape\+Creator}.
+
+\hypertarget{class_shape_creator_link_a036ecc845946d23b36335e9077308bcf}{}\label{class_shape_creator_link_a036ecc845946d23b36335e9077308bcf} 
+\index{Shape\+Creator\+Link@{Shape\+Creator\+Link}!create\+Shape\+Spe@{create\+Shape\+Spe}}
+\index{create\+Shape\+Spe@{create\+Shape\+Spe}!Shape\+Creator\+Link@{Shape\+Creator\+Link}}
+\subsubsection{\texorpdfstring{create\+Shape\+Spe()}{createShapeSpe()}}
+{\footnotesize\ttfamily virtual \hyperlink{class_shape}{Shape}$\ast$ Shape\+Creator\+Link\+::create\+Shape\+Spe (\begin{DoxyParamCaption}\item[{const string \&}]{shape\+String }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Abstract method for try creating shape with each type of \hyperlink{class_shape}{Shape} 
+\begin{DoxyParams}{Parameters}
+{\em shape\+String} & The string for build the shape \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A Shape$\ast$ build with shape\+String 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_circle_creator_ae77dd120e2521fdfb2e002228a1f0c25}{Circle\+Creator}, \hyperlink{class_composed_shape_creator_a5a1ebce5d0d7509923e70d507dc57ff2}{Composed\+Shape\+Creator}, \hyperlink{class_polygon_creator_ad7a34580d4291a50fe189c912c7b32a0}{Polygon\+Creator}, \hyperlink{class_segment_creator_ab19a7665cba20a6e0b44c57b3cb4ce77}{Segment\+Creator}, and \hyperlink{class_triangle_creator_a8698d657d98a7be93aeaf86b2434bbb3}{Triangle\+Creator}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_shape_creator_link_a53714771bfbce43504eac24c4acf7e6f}{}\label{class_shape_creator_link_a53714771bfbce43504eac24c4acf7e6f} 
+\index{Shape\+Creator\+Link@{Shape\+Creator\+Link}!\+\_\+next@{\+\_\+next}}
+\index{\+\_\+next@{\+\_\+next}!Shape\+Creator\+Link@{Shape\+Creator\+Link}}
+\subsubsection{\texorpdfstring{\+\_\+next}{\_next}}
+{\footnotesize\ttfamily \hyperlink{class_shape_creator_link}{Shape\+Creator\+Link}$\ast$ Shape\+Creator\+Link\+::\+\_\+next\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Loader/\hyperlink{_shape_creator_link_8hpp}{Shape\+Creator\+Link.\+hpp}\item 
+src/\+Loader/\hyperlink{_shape_creator_link_8cpp}{Shape\+Creator\+Link.\+cpp}\end{DoxyCompactItemize}

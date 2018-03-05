@@ -1,0 +1,128 @@
+\hypertarget{class_color}{}\section{Color Class Reference}
+\label{class_color}\index{Color@{Color}}
+
+
+{\ttfamily \#include $<$Color.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_color_a0787459fe72580ad9b96a774b1da4c06}{Color} (unsigned char red, unsigned char green, unsigned char blue)
+\item 
+unsigned char \hyperlink{class_color_a366040ee493dc797f3877c747f70245e}{get\+Red} () const
+\item 
+unsigned char \hyperlink{class_color_ae97f0bb0f55f82c2e824899d9f8f60ad}{get\+Green} () const
+\item 
+unsigned char \hyperlink{class_color_afda694abe0a33c924daf178603f44752}{get\+Blue} () const
+\item 
+\hyperlink{class_color_ac245c9d05bd9409245905b6f15c30f1a}{operator string} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_color_aba1211bd466bce64d3076af2a55d9785}{init\+Color\+Map} ()
+\item 
+static \hyperlink{class_color}{Color} \hyperlink{class_color_a94697e8c9eb81124c5a7c1439e1e7348}{get\+Color} (const string \&color)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \hyperlink{class_color_aaa4c7d27cb5d200e5d58e49962d9d9e8}{operator$<$$<$} (ostream \&os, const \hyperlink{class_color}{Color} \&color)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents R\+GB \hyperlink{class_color}{Color} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_color_a0787459fe72580ad9b96a774b1da4c06}{}\label{class_color_a0787459fe72580ad9b96a774b1da4c06} 
+\index{Color@{Color}!Color@{Color}}
+\index{Color@{Color}!Color@{Color}}
+\subsubsection{\texorpdfstring{Color()}{Color()}}
+{\footnotesize\ttfamily Color\+::\+Color (\begin{DoxyParamCaption}\item[{unsigned char}]{red,  }\item[{unsigned char}]{green,  }\item[{unsigned char}]{blue }\end{DoxyParamCaption})}
+
+Constructor for \hyperlink{class_color}{Color} 
+\begin{DoxyParams}{Parameters}
+{\em red} & unsigned char for red intensity \\
+\hline
+{\em green} & unsigned char for green intensity \\
+\hline
+{\em blue} & unsigned char for blue intensity \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_color_afda694abe0a33c924daf178603f44752}{}\label{class_color_afda694abe0a33c924daf178603f44752} 
+\index{Color@{Color}!get\+Blue@{get\+Blue}}
+\index{get\+Blue@{get\+Blue}!Color@{Color}}
+\subsubsection{\texorpdfstring{get\+Blue()}{getBlue()}}
+{\footnotesize\ttfamily unsigned char Color\+::get\+Blue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Gets \+\_\+blue intensity \begin{DoxyReturn}{Returns}
+blue intensity 
+\end{DoxyReturn}
+\hypertarget{class_color_a94697e8c9eb81124c5a7c1439e1e7348}{}\label{class_color_a94697e8c9eb81124c5a7c1439e1e7348} 
+\index{Color@{Color}!get\+Color@{get\+Color}}
+\index{get\+Color@{get\+Color}!Color@{Color}}
+\subsubsection{\texorpdfstring{get\+Color()}{getColor()}}
+{\footnotesize\ttfamily \hyperlink{class_color}{Color} Color\+::get\+Color (\begin{DoxyParamCaption}\item[{const string \&}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Gets color in map with a string 
+\begin{DoxyParams}{Parameters}
+{\em color} & string of the color \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{class_utils_exception}{Utils\+Exception}} & When color isn\textquotesingle{}t found in the array of colors \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+The corresponding \hyperlink{class_color}{Color} object 
+\end{DoxyReturn}
+\hypertarget{class_color_ae97f0bb0f55f82c2e824899d9f8f60ad}{}\label{class_color_ae97f0bb0f55f82c2e824899d9f8f60ad} 
+\index{Color@{Color}!get\+Green@{get\+Green}}
+\index{get\+Green@{get\+Green}!Color@{Color}}
+\subsubsection{\texorpdfstring{get\+Green()}{getGreen()}}
+{\footnotesize\ttfamily unsigned char Color\+::get\+Green (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Gets \+\_\+green intensity \begin{DoxyReturn}{Returns}
+green intensity 
+\end{DoxyReturn}
+\hypertarget{class_color_a366040ee493dc797f3877c747f70245e}{}\label{class_color_a366040ee493dc797f3877c747f70245e} 
+\index{Color@{Color}!get\+Red@{get\+Red}}
+\index{get\+Red@{get\+Red}!Color@{Color}}
+\subsubsection{\texorpdfstring{get\+Red()}{getRed()}}
+{\footnotesize\ttfamily unsigned char Color\+::get\+Red (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Gets \+\_\+red intensity \begin{DoxyReturn}{Returns}
+red intensity 
+\end{DoxyReturn}
+\hypertarget{class_color_aba1211bd466bce64d3076af2a55d9785}{}\label{class_color_aba1211bd466bce64d3076af2a55d9785} 
+\index{Color@{Color}!init\+Color\+Map@{init\+Color\+Map}}
+\index{init\+Color\+Map@{init\+Color\+Map}!Color@{Color}}
+\subsubsection{\texorpdfstring{init\+Color\+Map()}{initColorMap()}}
+{\footnotesize\ttfamily void Color\+::init\+Color\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Initialize map of color \hypertarget{class_color_ac245c9d05bd9409245905b6f15c30f1a}{}\label{class_color_ac245c9d05bd9409245905b6f15c30f1a} 
+\index{Color@{Color}!operator string@{operator string}}
+\index{operator string@{operator string}!Color@{Color}}
+\subsubsection{\texorpdfstring{operator string()}{operator string()}}
+{\footnotesize\ttfamily Color\+::operator string (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Operator cast to string 
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_color_aaa4c7d27cb5d200e5d58e49962d9d9e8}{}\label{class_color_aaa4c7d27cb5d200e5d58e49962d9d9e8} 
+\index{Color@{Color}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Color@{Color}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{const \hyperlink{class_color}{Color} \&}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Utils/\hyperlink{_color_8hpp}{Color.\+hpp}\item 
+src/\+Utils/\hyperlink{_color_8cpp}{Color.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,76 @@
+\hypertarget{class_composed_shape_creator}{}\section{Composed\+Shape\+Creator Class Reference}
+\label{class_composed_shape_creator}\index{Composed\+Shape\+Creator@{Composed\+Shape\+Creator}}
+
+
+{\ttfamily \#include $<$Composed\+Shape\+Creator.\+hpp$>$}
+
+
+
+Inheritance diagram for Composed\+Shape\+Creator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{class_composed_shape_creator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Composed\+Shape\+Creator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{class_composed_shape_creator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_composed_shape_creator_a6fc84212ed85e2a63c748faceb464a58}{Composed\+Shape\+Creator} (\hyperlink{class_shape_creator_link}{Shape\+Creator\+Link} $\ast$next)
+\item 
+virtual \hyperlink{class_shape}{Shape} $\ast$ \hyperlink{class_composed_shape_creator_a5a1ebce5d0d7509923e70d507dc57ff2}{create\+Shape\+Spe} (const string \&shape\+String) const
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class \hyperlink{class_composed_shape_creator}{Composed\+Shape\+Creator} Link of the C\+OR for build \hyperlink{class_composed_shape}{Composed\+Shape} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_composed_shape_creator_a6fc84212ed85e2a63c748faceb464a58}{}\label{class_composed_shape_creator_a6fc84212ed85e2a63c748faceb464a58} 
+\index{Composed\+Shape\+Creator@{Composed\+Shape\+Creator}!Composed\+Shape\+Creator@{Composed\+Shape\+Creator}}
+\index{Composed\+Shape\+Creator@{Composed\+Shape\+Creator}!Composed\+Shape\+Creator@{Composed\+Shape\+Creator}}
+\subsubsection{\texorpdfstring{Composed\+Shape\+Creator()}{ComposedShapeCreator()}}
+{\footnotesize\ttfamily Composed\+Shape\+Creator\+::\+Composed\+Shape\+Creator (\begin{DoxyParamCaption}\item[{\hyperlink{class_shape_creator_link}{Shape\+Creator\+Link} $\ast$}]{next }\end{DoxyParamCaption})}
+
+Constructor of \hyperlink{class_composed_shape_creator}{Composed\+Shape\+Creator} 
+\begin{DoxyParams}{Parameters}
+{\em next} & The next \hyperlink{class_shape_creator_link}{Shape\+Creator\+Link} if this one fails \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_composed_shape_creator_a5a1ebce5d0d7509923e70d507dc57ff2}{}\label{class_composed_shape_creator_a5a1ebce5d0d7509923e70d507dc57ff2} 
+\index{Composed\+Shape\+Creator@{Composed\+Shape\+Creator}!create\+Shape\+Spe@{create\+Shape\+Spe}}
+\index{create\+Shape\+Spe@{create\+Shape\+Spe}!Composed\+Shape\+Creator@{Composed\+Shape\+Creator}}
+\subsubsection{\texorpdfstring{create\+Shape\+Spe()}{createShapeSpe()}}
+{\footnotesize\ttfamily \hyperlink{class_shape}{Shape} $\ast$ Composed\+Shape\+Creator\+::create\+Shape\+Spe (\begin{DoxyParamCaption}\item[{const string \&}]{shape\+String }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Try to create a \hyperlink{class_composed_shape}{Composed\+Shape} with the string 
+\begin{DoxyParams}{Parameters}
+{\em shape\+String} & the string with informations of the shape \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Shape$\ast$ wich were created 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_shape_creator_link_a036ecc845946d23b36335e9077308bcf}{Shape\+Creator\+Link}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Loader/\hyperlink{_composed_shape_creator_8hpp}{Composed\+Shape\+Creator.\+hpp}\item 
+src/\+Loader/\hyperlink{_composed_shape_creator_8cpp}{Composed\+Shape\+Creator.\+cpp}\end{DoxyCompactItemize}

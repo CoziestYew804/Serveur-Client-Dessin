@@ -1,0 +1,76 @@
+\hypertarget{class_circle_creator}{}\section{Circle\+Creator Class Reference}
+\label{class_circle_creator}\index{Circle\+Creator@{Circle\+Creator}}
+
+
+{\ttfamily \#include $<$Circle\+Creator.\+hpp$>$}
+
+
+
+Inheritance diagram for Circle\+Creator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{class_circle_creator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Circle\+Creator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{class_circle_creator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_circle_creator_a549730b5da4a9ebc7a814ef823683246}{Circle\+Creator} (\hyperlink{class_shape_creator_link}{Shape\+Creator\+Link} $\ast$next)
+\item 
+virtual \hyperlink{class_shape}{Shape} $\ast$ \hyperlink{class_circle_creator_ae77dd120e2521fdfb2e002228a1f0c25}{create\+Shape\+Spe} (const string \&shape\+String) const
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class \hyperlink{class_circle_creator}{Circle\+Creator} Link of the C\+OR for build \hyperlink{class_circle}{Circle} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_circle_creator_a549730b5da4a9ebc7a814ef823683246}{}\label{class_circle_creator_a549730b5da4a9ebc7a814ef823683246} 
+\index{Circle\+Creator@{Circle\+Creator}!Circle\+Creator@{Circle\+Creator}}
+\index{Circle\+Creator@{Circle\+Creator}!Circle\+Creator@{Circle\+Creator}}
+\subsubsection{\texorpdfstring{Circle\+Creator()}{CircleCreator()}}
+{\footnotesize\ttfamily Circle\+Creator\+::\+Circle\+Creator (\begin{DoxyParamCaption}\item[{\hyperlink{class_shape_creator_link}{Shape\+Creator\+Link} $\ast$}]{next }\end{DoxyParamCaption})}
+
+Constructor of \hyperlink{class_circle_creator}{Circle\+Creator} 
+\begin{DoxyParams}{Parameters}
+{\em next} & The next \hyperlink{class_shape_creator_link}{Shape\+Creator\+Link} if this one fails \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_circle_creator_ae77dd120e2521fdfb2e002228a1f0c25}{}\label{class_circle_creator_ae77dd120e2521fdfb2e002228a1f0c25} 
+\index{Circle\+Creator@{Circle\+Creator}!create\+Shape\+Spe@{create\+Shape\+Spe}}
+\index{create\+Shape\+Spe@{create\+Shape\+Spe}!Circle\+Creator@{Circle\+Creator}}
+\subsubsection{\texorpdfstring{create\+Shape\+Spe()}{createShapeSpe()}}
+{\footnotesize\ttfamily \hyperlink{class_shape}{Shape} $\ast$ Circle\+Creator\+::create\+Shape\+Spe (\begin{DoxyParamCaption}\item[{const string \&}]{shape\+String }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Try to create a \hyperlink{class_circle}{Circle} with the string 
+\begin{DoxyParams}{Parameters}
+{\em shape\+String} & The string with informations of the shape \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Shape$\ast$ wich were created 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_shape_creator_link_a036ecc845946d23b36335e9077308bcf}{Shape\+Creator\+Link}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Loader/\hyperlink{_circle_creator_8hpp}{Circle\+Creator.\+hpp}\item 
+src/\+Loader/\hyperlink{_circle_creator_8cpp}{Circle\+Creator.\+cpp}\end{DoxyCompactItemize}

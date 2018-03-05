@@ -1,0 +1,71 @@
+.TH "Shape" 3 "Thu Nov 17 2016" "Version 1" "Drawing Client" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shape \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Shape\&.hpp>\fP
+.PP
+Inherited by \fBCircle\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBdraw\fP (const \fBDrawingVisitor\fP *visitor) const =0"
+.br
+.ti -1c
+.RI "virtual \fBoperator string\fP () const =0"
+.br
+.ti -1c
+.RI "virtual void \fBsave\fP (const \fBSaveVisitor\fP *saveVisitor) const =0"
+.br
+.ti -1c
+.RI "virtual void \fBtranslation\fP ()=0"
+.br
+.ti -1c
+.RI "virtual void \fBhomothety\fP ()=0"
+.br
+.ti -1c
+.RI "virtual void \fBrotation\fP ()=0"
+.br
+.ti -1c
+.RI "virtual double \fBgetArea\fP () const =0"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual void Shape::draw (const \fBDrawingVisitor\fP * visitor) const\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBCircle\fP\&.
+.SS "virtual double Shape::getArea () const\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBCircle\fP\&.
+.SS "virtual void Shape::homothety ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBCircle\fP\&.
+.SS "virtual Shape::operator string () const\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBCircle\fP\&.
+.SS "virtual void Shape::rotation ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBCircle\fP\&.
+.SS "virtual void Shape::save (const \fBSaveVisitor\fP * saveVisitor) const\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBCircle\fP\&.
+.SS "virtual void Shape::translation ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBCircle\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Drawing Client from the source code\&.

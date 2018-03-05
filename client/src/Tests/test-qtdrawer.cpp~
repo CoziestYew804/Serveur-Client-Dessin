@@ -1,0 +1,21 @@
+#include "../Shape/Circle.hpp"
+#include "../Shape/Polygon.hpp"
+#include "../Shape/Triangle.hpp"
+#include "../Shape/Segment.hpp"
+#include "../Shape/ComposedShape.hpp"
+#include "../Visitor/QtDrawer.hpp"
+
+
+using std::cout;
+using std::endl;
+using std::string;
+
+int main(int argc, char* argv[])
+{
+  QtDrawer *qtDrawer = new QtDrawer(argc, argv);
+
+  Vector2D center(50, 50);
+  Circle C(center, 50, Color::getColor("red"));
+  C.draw(qtDrawer);
+  return 0;
+}
